@@ -1,0 +1,122 @@
+@import "../../styles/index.scss";
+
+.home {
+  background-color: $whitesmoke;
+  padding-bottom: 100px;
+  padding-top: 200px;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  padding: 0 4rem;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    line-height: 1.6;
+    margin-right: 25px;
+    color: $textColor;
+  }
+
+
+  .hero-text span {
+    margin-top: 25px;
+  }
+
+  .hero-text span i {
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: all 0.2s;
+  }
+
+  .hero-text span i:hover {
+    color: $thirdColor;
+  }
+
+  .hello-img {
+    width: 50px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .hero-img {
+    border-radius: 50%;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    animation: animimg 4s ease-in-out infinite;
+  }
+
+  @keyframes animimg {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
+
+@media screen and (max-width: 1368px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    // height: auto;
+    text-align: center;
+  }
+  .container .hero-text p {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+  .home {
+    padding-top: 100px;
+  }
+  .container .hero-text h1 {
+    font-size: 2.3rem;
+  }
+  @keyframes animimg {
+    50% {
+      transform: translateY(-0.5rem);
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container .hero-img {
+    width: 17rem;
+    height: 17rem;
+  }
+
+}

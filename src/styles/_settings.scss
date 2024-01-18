@@ -1,0 +1,25 @@
+$whitesmoke: whitesmoke;
+$thirdColor: #147efb;
+$textColor: #767676;
+
+// Hover color on links full screen
+$hoverColorLinksFullScreen: #f0efef;
+// Hover color on links mobile screen
+$hoverColorLinksMobileScreen: #ebebeb;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  color: #2d2e32;
+  font-family: "Poppins", sans-serif;
+  background-color: $whitesmoke;
+}
+
