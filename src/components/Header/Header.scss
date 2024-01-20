@@ -37,8 +37,8 @@
   transition: all 0.2s;
 }
 
-.navbar__a:hover {
-  color: $thirdColor;
+.navbar__li:hover {
+  opacity: 50%;
 }
 
 #burger__icon {

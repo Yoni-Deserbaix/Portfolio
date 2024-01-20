@@ -1,5 +1,7 @@
 import "./Home.scss";
 import memojiHome from "../../assets/memoji-home.png";
+import DownloadCV from "../../assets/Yoni Deserbaix CV 2024.pdf";
+
 const Home = () => {
   return (
     <section className="home" id="home">
@@ -7,7 +9,7 @@ const Home = () => {
         <div className="content">
           <div className="hero-text">
             <h1>
-              Développeur Frontend React
+              Salut, je suis Yoni Deserbaix
               <span>
                 <img
                   src="https://i.ibb.co/DKVdrf2/hello-img.png"
@@ -18,24 +20,39 @@ const Home = () => {
               </span>
             </h1>
             <p>
-              Salut ! Je m'appelle Yoni Deserbaix et je suis un développeur
-              frontend basé à Nantes.
-              <i className="fa-solid fa-map-pin location-icon" />
+              Développeur Frontend React et étudiant en informatique basé à
+              Nantes.
             </p>
-            <span>
+            <span className="contact">
               <a
                 href="http://linkedin.com/in/yoni-deserbaix"
                 target="_blank"
                 rel="noreferrer"
+                class="social-button"
               >
                 <i class="bx bxl-linkedin-square"></i>
+                LinkedIn
               </a>
               <a
                 href="https://github.com/Yoni-Deserbaix"
                 rel="noreferrer"
                 target="_blank"
+                class="social-button"
               >
                 <i class="bx bxl-github"></i>
+                Github
+              </a>
+              <a
+                href="mailto:yonideserbaix@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+                class="social-button"
+              >
+                <i class="bx bxs-envelope"></i> yonideserbaix@gmail.com
+              </a>
+              <br />
+              <a href={DownloadCV} className="contact-button">
+                Download CV
               </a>
             </span>
           </div>

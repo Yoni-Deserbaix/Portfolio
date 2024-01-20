@@ -9,7 +9,7 @@
 .container {
   margin: auto;
   width: 70%;
-  padding: 0 4rem;
+  padding: 0 2rem;
 
   .content {
     display: flex;
@@ -36,19 +36,39 @@
     color: $textColor;
   }
 
-
   .hero-text span {
     margin-top: 25px;
   }
 
-  .hero-text span i {
-    font-size: 2rem;
-    margin-right: 15px;
-    transition: all 0.2s;
+  .social-button i {
+    background-color: transparent;
+    font-size: 1rem;
+    color: $whitesmoke;
+    padding-right: 5px;
+    transform: translateY(1px);
   }
 
-  .hero-text span i:hover {
-    color: $thirdColor;
+  .contact a {
+    display: inline-block;
+    color: $whitesmoke;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+    background-color: $textColor;
+  }
+
+  .contact .contact-button {
+    background-color: $whitesmoke;
+    font-size: 1rem;
+    color: $textColor;
+    border: solid 2px $textColor;
+  }
+
+  .contact a:hover {
+    opacity: 80%;
   }
 
   .hello-img {
@@ -94,6 +114,10 @@
   .container .hero-text p {
     margin-right: 0px;
   }
+  .container .hero-img {
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -106,17 +130,10 @@
   .container .hero-text h1 {
     font-size: 2.3rem;
   }
+
   @keyframes animimg {
     50% {
       transform: translateY(-0.5rem);
     }
   }
-}
-
-@media screen and (max-width: 350px) {
-  .container .hero-img {
-    width: 17rem;
-    height: 17rem;
-  }
-
 }
