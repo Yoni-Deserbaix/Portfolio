@@ -1,8 +1,7 @@
 @import "../../styles/index.scss";
 
 .home {
-  background-color: $whitesmoke;
-  padding-bottom: 100px;
+  background-color: $mainColor;
   padding-top: 200px;
 }
 
@@ -52,19 +51,12 @@
     display: inline-block;
     color: $whitesmoke;
     font-size: 1rem;
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 15px;
     margin-right: 7px;
     margin-bottom: 10px;
     transition: all 0.2s;
     background-color: $textColor;
-  }
-
-  .contact .contact-button {
-    background-color: $whitesmoke;
-    font-size: 1rem;
-    color: $textColor;
-    border: solid 2px $textColor;
   }
 
   .contact a:hover {
@@ -85,6 +77,62 @@
     animation: animimg 4s ease-in-out infinite;
   }
 
+  .hero-mouse {
+    margin-top: 350px;
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+  
+
+  .mouse-icon {
+    width: 25px;
+    height: 45px;
+    border-radius: 15px;
+    position: relative;
+    border: 2px solid $textColor;
+    text-align: center;
+  }
+  
+  .mouse-icon span {
+    width: 3px;
+    height: 8px;
+    margin: 2px auto 0;
+    display: block;
+    background: $textColor;
+    border-radius: 5px;
+    -webkit-animation: 1.2s ease infinite wheel-up-down;
+    animation: 1.2s ease infinite wheel-up-down;
+  }
+
+  @-webkit-keyframes wheel-up-down {
+    0% {
+      margin-top: 2px;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      margin-top: 20px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes wheel-up-down {
+    0% {
+      margin-top: 2px;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      margin-top: 20px;
+      opacity: 0;
+    }
+  }
+
   @keyframes animimg {
     0% {
       transform: translateY(0%);
@@ -98,17 +146,10 @@
   }
 }
 
-@media screen and (max-width: 1368px) {
-  .container {
-    width: 90%;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .content {
     flex-direction: column-reverse;
     gap: 3rem;
-    // height: auto;
     text-align: center;
   }
   .container .hero-text p {
@@ -117,6 +158,11 @@
   .container .hero-img {
     width: 12rem;
     height: 12rem;
+  }
+  .container {
+    .hero-mouse {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -134,6 +180,37 @@
   @keyframes animimg {
     50% {
       transform: translateY(-0.5rem);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    .hero-img {
+      border-radius: 50%;
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+      animation: animimg 4s ease-in-out infinite;
+    }
+
+    .hero-text h1 {
+      font-size: 1.2rem;
+      margin-top: -1.5rem;
+    }
+
+    .hero-text span {
+      margin-top: 10px;
+    }
+    .social-button i {
+      font-size: 0.7rem;
+    }
+
+    .contact a {
+      font-size: 0.7rem;
+    }
+    .hero-mouse {
+      margin-top: 20px;
     }
   }
 }

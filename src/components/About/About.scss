@@ -1,0 +1,71 @@
+@import "../../styles/index.scss";
+
+.about {
+  background-color: $whitesmoke;
+  padding: 100px 0;
+
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  border-radius: 25px;
+}
+
+.about-text h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-text p {
+  color: $textColor;
+  line-height: 1.5;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.DownloadCV i {
+    background-color: transparent;
+    font-size: 1rem;
+    color: $whitesmoke;
+    padding-right: 5px;
+    transform: translateY(2px);
+  }
+
+
+.DownloadCV {
+    margin-top: 20px;
+    display: inline-block;
+    color: $whitesmoke;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 15px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+    background-color: $textColor;
+    &:hover {
+        opacity: 80%;
+      }    
+  }
+  
+@media screen and (max-width: 900px) {
+  .about-text {
+    text-align: center;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content .about-img {
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+}

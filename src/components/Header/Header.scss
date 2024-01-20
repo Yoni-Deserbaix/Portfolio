@@ -1,13 +1,14 @@
 @import "../../styles/index.scss";
 
 .navbar {
-  background-color: $whitesmoke;
+  background-color: $mainColor;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   position: fixed;
   top: 0;
   width: 100%;
   left: 0;
   z-index: 1;
+  
 }
 
 .logo img {
@@ -22,6 +23,7 @@
 .navbar__ul {
   float: right;
   margin-right: 25px;
+  
 }
 .navbar__li {
   display: inline-block;
