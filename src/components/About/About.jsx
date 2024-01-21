@@ -14,8 +14,8 @@ const About = () => {
             <h3>A propos de moi</h3>
 
             <p>
-              Hello 👋! je m'appelle <b>Yoni</b>, je suis un jeune{" "}
-              <b>développeur de 20 ans</b> au parcours atypique, ayant évolué
+              Hello 👋! je m'appelle <b>Yoni</b>, je suis un jeune
+              <b> développeur de 20 ans</b> au parcours atypique, ayant évolué
               dans l'électricité et des environnements connectés à l'univers de
               la <b>programmation</b>, explorant ainsi les frontières créatives
               de l'<b>informatique</b>. Mon expertise en <b>programmation</b> et
@@ -31,6 +31,17 @@ const About = () => {
               perspective unique et des compétences solides à{" "}
               <b>vos projets</b>😊!
             </p>
+            {/* <p>
+            Hello 👋! Je m'appelle <b>Yoni</b>, un <b>développeur de 20 ans</b> au parcours
+              atypique, de l'électricité et des environnements connectés à la <b>programmation</b> et l'
+              <b>administration de réseaux</b>. Autodidacte déterminé,  mon
+              exploration du <b>JavaScript</b> associé à <b>React</b> a donné
+              vie à des projets web <b>créatifs</b> et <b>innovants</b>. Mon enthousiasme
+              pour le <b>développement Frontend</b> me prépare à contribuer
+              activement à des projets captivants. Explorez mon portfolio pour
+              découvrir comment je peux apporter une perspective unique à{" "}
+              <b>vos projets !</b>😊
+            </p> */}
 
             <a href={DownloadCV} className="DownloadCV">
               Download CV <i class="bx bxs-download"></i>

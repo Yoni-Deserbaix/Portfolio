@@ -47,7 +47,7 @@
     transform: translateY(1px);
   }
 
-  .contact a {
+  .link a {
     display: inline-block;
     color: $whitesmoke;
     font-size: 1rem;
@@ -59,7 +59,7 @@
     background-color: $textColor;
   }
 
-  .contact a:hover {
+  .link a:hover {
     opacity: 80%;
   }
 
@@ -83,7 +83,6 @@
     margin-bottom: 25px;
     justify-content: center;
   }
-  
 
   .mouse-icon {
     width: 25px;
@@ -93,7 +92,7 @@
     border: 2px solid $textColor;
     text-align: center;
   }
-  
+
   .mouse-icon span {
     width: 3px;
     height: 8px;
@@ -186,6 +185,8 @@
 
 @media screen and (max-width: 480px) {
   .container {
+    width: 90%;
+
     .hero-img {
       border-radius: 50%;
       position: relative;
@@ -206,7 +207,7 @@
       font-size: 0.7rem;
     }
 
-    .contact a {
+    .link a {
       font-size: 0.7rem;
     }
     .hero-mouse {

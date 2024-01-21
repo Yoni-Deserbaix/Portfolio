@@ -26,7 +26,7 @@ export const projectsData = [
   {
     id: 3,
     image: Work3,
-    title: "World Flags Encyclopedia 🌐",
+    title: "World Flags Encyclopedia",
     category: "React",
     languages: ["React", "JavaScript"],
 

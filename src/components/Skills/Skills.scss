@@ -1,0 +1,68 @@
+@import "../../styles/index.scss";
+
+.skills {
+  background-color: $whitesmoke;
+}
+
+.skills-section {
+  margin: auto;
+  width: 100%;
+  padding: 100px 0rem;
+}
+
+.skills-title {
+  padding: 50px;
+  
+}
+
+.skills-content {
+  margin-top: 50px;
+  padding: 10px 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills-box {
+  flex: 1; 
+  
+  flex-basis: 15rem;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid $whitesmoke;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skills-box:hover {
+  border-color: var(--red);
+  transform: scale(1.02);
+}
+
+.skills-box i {
+  font-size: 7rem;
+}
+
+.skills-box h3 {
+  font-size: 2.6rem;
+}
+
+.skills-box p {
+  font-size: 1rem;
+
+  margin: 1rem 0 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-box {
+    flex: 1; /* Ajuste la flexibilité */
+    flex-basis: 15rem;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid $whitesmoke;
+    transition: transform 0.2s ease-in-out;
+  }
+}

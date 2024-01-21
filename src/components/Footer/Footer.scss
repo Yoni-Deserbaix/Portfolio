@@ -1,0 +1,29 @@
+@import "../../styles/index.scss";
+
+.footer {
+  display: flex;
+  background-color: #2d2e32;
+  padding: 50px 0;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  p {
+    font-size: 14px;
+    color: $whitesmoke;
+    margin-bottom: 15px;
+  }
+
+  .socials {
+    i {
+      font-size: 1.8rem;
+      margin-right: 15px;
+      color: $whitesmoke;
+
+      transition: all 0.2s;
+    }
+    i:hover {
+      opacity: 70%;
+    }
+  }
+}

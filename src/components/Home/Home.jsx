@@ -12,9 +12,10 @@ const Home = () => {
               <span>👋</span>
             </h1>
             <p>
-              Développeur Frontend et étudiant en informatique basé à Nantes. 📍
+              Développeur Fullstack orienté Frontend et étudiant en informatique
+              basé à Nantes. 📍
             </p>
-            <span className="contact">
+            <span className="link">
               <a
                 href="http://linkedin.com/in/yoni-deserbaix"
                 target="_blank"
@@ -52,100 +53,12 @@ const Home = () => {
             />
           </div>
         </div>
-        {/* <div className="skills">
-          <h3>Frontend </h3>
-          <div className="languages">
-            <ul>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  height="50"
-                  alt="javascript logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  height="50"
-                  alt="react logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                  height="50"
-                  alt="sass logo"
-                />
-              </li>
-            </ul>
+        <a class="hero-mouse anchor" href="#about">
+          <div class="mouse-icon">
+            <span></span>
           </div>
-        </div>
-        <div className="skills">
-          <h3>Backend </h3>
-          <div className="languages">
-            <ul>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                  height="50"
-                  alt="cplusplus logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.simpleicons.org/nodedotjs/339933"
-                  height="50"
-                  alt="nodejs logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                  height="50"
-                  alt="express logo"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="skills">
-          <h3>Outils </h3>
-          <div className="languages">
-            <ul>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg"
-                  height="50"
-                  alt="qt logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                  height="50"
-                  alt="git logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                  height="50"
-                  alt="linux logo"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  height="50"
-                  alt="mysql logo"
-                />
-              </li>
-            </ul>
-          </div>
-        </div> */}
-<a class="hero-mouse anchor" href="#about">
-  <div class="mouse-icon"><span></span></div>
-</a>      </div>
+        </a>{" "}
+      </div>
     </section>
   );
 };
