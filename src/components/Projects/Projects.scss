@@ -15,14 +15,37 @@
   }
 }
 
+.item-languages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.language-tag {
+  margin-right: 8px;
+  padding: 0.25rem 0.75rem;
+  background-color: $whitesmoke;
+  color: $textColor;
+  border-radius: 0.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.language-tag:hover {
+  background-color: $textColor;
+  color: $whitesmoke;}
+
 .work-item {
   cursor: pointer;
   margin-top: 2rem;
   padding: 0.25rem 0.75rem;
   border-radius: 0.5rem;
   text-transform: capitalize;
+  transition: all 0.2s;
+
   border: 1px solid rgba(0, 0, 0, 0.4);
-    color: $textColor;
+  color: $textColor;
 }
 
 .work-item:hover {
@@ -47,16 +70,20 @@
 }
 
 .work-card {
-  background-color: $secondColor;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1.25rem;
+  padding: 2rem;
   border-radius: 1rem;
 }
 
 .work-img {
-  width: 295px;
+  width: 275px;
   border-radius: 1rem;
   margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.work-img:hover {
+  transform: scale(1.1);
 }
 
 .work-title {
@@ -65,7 +92,8 @@
 
 .work-button {
   color: $textColor;
-  display: flex;
+  display: inline-flex;
+  padding-right: 20px;
   align-items: center;
   column-gap: 0.25rem;
 }
@@ -77,4 +105,11 @@
 
 .work-button:hover .work-button-icon {
   transform: translateX(0.25rem);
+}
+
+// active work
+.active-work {
+  background-color: $textColor;
+  color: $whitesmoke;
+  border: none;
 }

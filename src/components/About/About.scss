@@ -3,7 +3,6 @@
 .about {
   background-color: $whitesmoke;
   padding: 100px 0;
-
 }
 
 .about-content {
@@ -14,9 +13,9 @@
 .about-img {
   width: 250px;
   height: 350px;
-  margin-right: 200px;
+  margin-right: 100px;
   border-radius: 25px;
-  transition: transform .2s;
+  transition: transform .4s;
   &:hover {
     transform: scale(1.1);
   }
@@ -33,7 +32,6 @@
   line-height: 1.5;
   margin-top: 15px;
   font-size: 1rem;
-  max-width: 500px;
 }
 
 .DownloadCV i {

@@ -21,6 +21,7 @@ const Works = () => {
 
   const handleClick = (e, index) => {
     setItem({ name: e.target.textContent });
+    setActive(index);
   };
 
   return (
@@ -32,7 +33,7 @@ const Works = () => {
               onClick={(e) => {
                 handleClick(e, index);
               }}
-              className="work-item"
+              className={`${active === index ? "active-work" : ""}  work-item`}
               key={index}
             >
               {item.name}

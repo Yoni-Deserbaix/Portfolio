@@ -5,9 +5,35 @@ const WorksItems = ({ item }) => {
     <div className="work-card" key={item.id}>
       <img src={item.image} alt="" className="work-img" />
       <h3 className="work-title">{item.title}</h3>
-      <a href="#" className="work-button">
-        Demo <i className="bx bx-right-arrow-alt work-button-icon"></i>
-      </a>
+      <div className="item-languages">
+        {item.languages.map((language, index) => (
+          <span key={index} className="language-tag">
+            {language}
+          </span>
+        ))}
+      </div>
+      <br />
+      {item.github && (
+        <a
+          href={item.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="work-button"
+        >
+          <i class="bx bxl-github work-button-icon"></i>
+          Code
+        </a>
+      )}
+      {item.demo && (
+        <a
+          href={item.demo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="work-button"
+        >
+          <i className="bx bx-right-arrow-alt work-button-icon"></i>Demo
+        </a>
+      )}
     </div>
   );
 };
