@@ -1,5 +1,6 @@
 import "./About.scss";
 import DownloadCV from "../../assets/Yoni Deserbaix CV 2024.pdf";
+import abbout from "../../assets/about.jpg";
 
 const About = () => {
   return (
@@ -7,28 +8,23 @@ const About = () => {
       <div className="container">
         <div className="about-content">
           <div className="about-img">
-            <img
-              src="https://i.ibb.co/2KN4TFz/working.png"
-              className="about-img"
-              alt=""
-            />
+            <img src={abbout} className="about-img" alt="" />
           </div>
           <div className="about-text">
             <h3>A propos de moi</h3>
 
             <p>
-              Passionné d'innovation informatique, j'ai tracé un parcours
-              atypique, passant des environnements connectés à la programmation,
-              explorant les frontières créatives de l'informatique. Actuellement
-              en 2ème année de BTS Systèmes Numériques, spécialité Informatiques
-              et Réseaux, j'ai forgé des bases solides en programmation et en
-              administration de réseaux. En autodidacte déterminé, mon
-              exploration du JavaScript, associé à React, a donné vie à des
-              projets web stimulants. Ma volonté d'apprendre et ma passion pour
-              le développement front-end m'animent, me préparant à contribuer
-              activement à des projets captivants.< br/>Naviguez à travers mon portfolio pour découvrir comment
-              je peux apporter une perspective unique et des compétences solides
-              à vos projets !
+              Je m'appelle Yoni, je suis un jeune développeur de 20 ans au parcours atypique, ayant
+              évolué des environnements connectés à l'univers de la
+              programmation, explorant ainsi les frontières créatives de
+              l'informatique. Mon expertise en programmation et en
+              administration de réseaux s'est forgée au fil de mes expériences.
+              En tant qu'autodidacte déterminé, mon exploration du JavaScript
+              associé à React a donné vie à des projets web stimulants. Ma
+              passion pour le développement frontend et ma soif d'apprentissage
+              me préparent à contribuer activement à des projets captivants.
+              Explorez mon portfolio pour découvrir comment je peux apporter une
+              perspective unique et des compétences solides à vos projets ! 
             </p>
             <a href={DownloadCV} className="DownloadCV">
               Download CV <i class="bx bxs-download"></i>

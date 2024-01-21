@@ -5,7 +5,7 @@ import { Bounce } from "react-toastify";
 
 const Notify = () => {
   useEffect(() => {
-    toast.success(" Disponible pour une alternance !", {
+    toast.success(" Disponible pour une alternance en septembre !", {
       position: "bottom-left",
       autoClose: 5000,
       hideProgressBar: false,

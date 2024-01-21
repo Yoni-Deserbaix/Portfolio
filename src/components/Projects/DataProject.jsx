@@ -12,31 +12,31 @@ export const projectsData = [
   //   id: 1,
   //   image: Work1,
   //   title: "Portfolio",
-  //   category: "Projets React",
+  //   category: "React",
   // },
   {
     id: 2,
     image: Work2,
     title: "CineQuik",
-    category: "Projets React",
+    category: "React",
   },
   {
     id: 3,
     image: Work3,
     title: "World Flags Encyclopedia",
-    category: "Projets React",
+    category: "React",
   },
   {
     id: 4,
     image: Work4,
     title: "FOODLAND",
-    category: "Projets HTML/CSS/JS",
+    category: "HTML/CSS/JS",
   },
   {
     id: 5,
     image: Work5,
     title: "GTA VI Landing page",
-    category: "Projets HTML/CSS/JS",
+    category: "HTML/CSS/JS",
   },
   {
     id: 6,
@@ -64,15 +64,16 @@ export const projectsData = [
   },
 ];
 
+
 export const projectsNav = [
   {
     name: "Tout",
   },
   {
-    name: "Projets React",
+    name: "React",
   },
   {
-    name: "Projets HTML/CSS/JS",
+    name: "HTML/CSS/JS",
   },
   {
     name: "Mini projets JS",
