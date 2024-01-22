@@ -1,6 +1,5 @@
 @import "../../styles/index.scss";
 
-
 .contact {
   background-color: $mainColor;
   padding: 100px 0;
@@ -37,6 +36,7 @@
     span {
       padding: 1rem;
       border-radius: 50%;
+
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
       i {
@@ -48,6 +48,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
       h3 {
         font-weight: 600;
         font-size: 1.2rem;
@@ -58,7 +59,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 900px) {
   .contact-wrapper {
