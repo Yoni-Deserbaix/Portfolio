@@ -1,6 +1,6 @@
 # View project 👀 
 
-checkout the project 👉 [here](https://yoni-deserbaix.github.io/Portfolio/)
+My portfolio is still in development but you can checkout the project 👉 [here](https://yoni-deserbaix.github.io/Portfolio/)
 
 # React + Vite
 
