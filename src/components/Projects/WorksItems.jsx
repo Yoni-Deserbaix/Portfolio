@@ -2,8 +2,8 @@ import React from "react";
 
 const WorksItems = ({ item }) => {
   return (
-    <div className="work-card" key={item.id}>
-      <img src={item.image} alt="" className="work-img" data-aos="fade-up" data-aos-duration="300"/>
+    <div className="work-card" key={item.id}data-aos="fade-up" data-aos-duration="300">
+      <img src={item.image} alt="" className="work-img" />
       <h3 className="work-title">{item.title}</h3>
       <div className="item-languages">
         {item.languages.map((language, index) => (
