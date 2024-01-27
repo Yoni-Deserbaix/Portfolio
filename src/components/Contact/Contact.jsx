@@ -6,12 +6,12 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div className="container">
         <div className="contact-content">
-          <h1 id="contact-title">Contact</h1>
-          <p id="contact-hook-sentence">
+          <h1 id="contact-title" data-aos="fade-up" data-aos-duration="300">Contact</h1>
+          <p id="contact-hook-sentence" data-aos="fade-up" data-aos-delay="300" data-aos-duration="300">
             Une opportunité d'alternance ? Contactez-moi ! 👇
           </p>
-          <div className="contact-wrapper">
-            <div className="contact-container">
+          <div className="contact-wrapper" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
+            <div className="contact-container" >
               <span>
                 <i class="bx bxs-map"></i>{" "}
               </span>

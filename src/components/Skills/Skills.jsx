@@ -5,19 +5,19 @@ const Skills = () => {
   return (
     <div className="skills">
       <section className="skills-section" id="skills">
-          <h2 className="skills-title">Compétences</h2>
+          <h2 className="skills-title" data-aos="fade-up"  data-aos-duration="300">Compétences</h2>
         <div className="skills-content">
-          <div className="skills-box">
+          <div className="skills-box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="300">
             <h1>Frontend</h1>
             <p>
               Maîtrise des langages de développement web tels que <b>HTML</b>,{" "}
               <b>CSS</b>, et
-              <b>JavaScript</b>. Expérience approfondie avec des bibliothèques
+              <b> JavaScript</b>. Expérience approfondie avec des bibliothèques
               et frameworks tels que <b>React</b>. Conception et développement
               d'interfaces utilisateur interactives et réactives.
             </p>
           </div>
-          <div className="skills-box">
+          <div className="skills-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="300">
             <h1>Backend</h1>
             <p>
               Connaissance des technologies backend telles que <b>Node.js</b> et
@@ -28,7 +28,7 @@ const Skills = () => {
               (client/serveur), allocation mémoire.
             </p>
           </div>
-          <div className="skills-box">
+          <div className="skills-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
             <h1>Outils</h1>
             <p>
               Utilisation d'outils de développement tels que <b>Git</b>,{" "}

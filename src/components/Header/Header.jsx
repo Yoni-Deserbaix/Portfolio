@@ -21,7 +21,7 @@ function Header() {
   };
   return (
     <nav className="navbar">
-      <a href="/">
+      <a href="#home">
         <strong className="logo">
           <img src={memojiHeader} alt="" />
         </strong>

@@ -7,13 +7,19 @@ const About = () => {
     <section className="about" id="about">
       <div className="container">
         <div className="about-content">
-          <div className="about-img">
+          <div
+            className="about-img"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <img src={aboutPhoto} className="about-img" alt="" />
           </div>
           <div className="about-text">
-            <h3>A propos de moi</h3>
+            <h3 data-aos="fade-up" data-aos-duration="300">
+              A propos de moi
+            </h3>
 
-            <p>
+            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="300">
               Hello 👋! je m'appelle <b>Yoni</b>, je suis un jeune
               <b> développeur de 20 ans</b> au parcours atypique, ayant évolué
               dans l'électricité et des environnements connectés à l'univers de
@@ -24,12 +30,14 @@ const About = () => {
               exploration du <b>JavaScript</b> associé à <b>React</b> a donné
               vie à des projets web <b>créatifs</b> et <b>innovants</b>. Ma
               passion pour le <b>développement Frontend</b> et ma soif
-              d'apprentissage me préparent à <b>contribuer activement</b> à des projets
-              captivants. <br />
+              d'apprentissage me préparent à <b>contribuer activement</b> à des
+              projets captivants. <br />
               <br />
+              <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
               Explorez mon portfolio pour découvrir comment je peux apporter une
-              perspective unique et des compétences solides à{" "}
-              <b>vos projets</b>😊!
+              perspective unique et des compétences solides à <b>vos projets</b>
+              😊!
+              </p>
             </p>
             {/* <p>
             Hello 👋! Je m'appelle <b>Yoni</b>, un <b>développeur de 20 ans</b> au parcours
@@ -43,7 +51,7 @@ const About = () => {
               <b>vos projets !</b>😊
             </p> */}
 
-            <a href={DownloadCV} className="DownloadCV">
+            <a href={DownloadCV} className="DownloadCV"  data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
               Download CV <i class="bx bxs-download"></i>
             </a>
           </div>
