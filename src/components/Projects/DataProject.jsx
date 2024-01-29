@@ -20,6 +20,7 @@ export const projectsData = [
     title: "CineQuik 🍿🎥",
     category: "React",
     languages: ["React", "JavaScript "],
+    description: "Création d'une application cinéma avec l'API TMDB réalisée avec React",
     github: "https://github.com/Yoni-Deserbaix/CineQuik",
     demo: "https://yoni-deserbaix.github.io/CineQuik/",
   },
@@ -29,9 +30,10 @@ export const projectsData = [
     title: "World Flags Encyclopedia",
     category: "React",
     languages: ["React", "JavaScript"],
-
+    description: "Création d'une interface web pour découvrir les pays du monde avec React",
     github: "https://github.com/Yoni-Deserbaix/World-Flags-Encyclopedia",
     demo: "https://yoni-deserbaix.github.io/World-Flags-Encyclopedia/",
+
   },
   {
     id: 4,
@@ -39,7 +41,7 @@ export const projectsData = [
     title: "FOODLAND 🍔",
     category: "HTML/CSS/JS",
     languages: ["HTML", "SASS", "JavaScript"],
-
+    description: "Landing page du restaurant FOODLAND réalisée avec SASS",
     github: "https://github.com/Yoni-Deserbaix/FOODLAND",
     demo: "https://yoni-deserbaix.github.io/FOODLAND/",
   },
@@ -49,7 +51,7 @@ export const projectsData = [
     title: "GTA VI Landing page 🦩",
     category: "HTML/CSS/JS",
     languages: ["HTML", "CSS", "JavaScript"],
-
+    description: "Landing page exclusive pour le jeu vidéo tant attendu Grand Theft AUTO VI",
     github: "https://github.com/Yoni-Deserbaix/GTA-VI-Landing-Page",
     demo: "https://yoni-deserbaix.github.io/GTA-VI-Landing-Page/",
   },
@@ -59,7 +61,7 @@ export const projectsData = [
     title: "Shooting Game 🧟",
     category: "Mini projets JS",
     languages: ["HTML", "CSS", "JavaScript"],
-
+    description: "Jeu de tir avec un timer et des bonus de temps",
     github: "https://github.com/Yoni-Deserbaix/Shooting-Game-JS",
     demo: "https://yoni-deserbaix.github.io/Shooting-Game-JS/",
   },
@@ -69,7 +71,7 @@ export const projectsData = [
     title: "Password Generator 🔐",
     category: "Mini projets JS",
     languages: ["HTML", "CSS", "JavaScript"],
-
+    description: "Réalisation d'un générateur de mot de passe au clique du bouton",
     github: "https://github.com/Yoni-Deserbaix/Password-Generator",
     demo: "https://yoni-deserbaix.github.io/Password-Generator/",
   },
@@ -79,7 +81,7 @@ export const projectsData = [
     title: "Weather App ⛅",
     category: "Mini projets JS",
     languages: ["Node.js", "Express.js", "JavaScript"],
-
+    description: "Réalisation d'une application météo sur un serveur Express avec Node.js",
     github: "https://github.com/Yoni-Deserbaix/WeatherAPI-App",
   },
   {
@@ -88,7 +90,7 @@ export const projectsData = [
     title: "Password Monkey 🐵🙈",
     category: "Mini projets JS",
     languages: ["HTML", "CSS", "JavaScript"],
-
+    description: "Mini formulaire qui chiffre le texte lorsque le bouton est cliqué",
     github: "https://github.com/Yoni-Deserbaix/Password-Monkey",
     demo: "https://yoni-deserbaix.github.io/Password-Monkey/",
   },

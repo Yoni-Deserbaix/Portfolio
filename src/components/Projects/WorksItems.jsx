@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const WorksItems = ({ item }) => {
   return (
-    <div className="work-card" key={item.id}data-aos="fade-up" data-aos-duration="300">
+    <div
+      className="work-card"
+      key={item.id}
+      data-aos="fade-up"
+      data-aos-duration="300"
+    >
       <img src={item.image} alt="" className="work-img" />
+
       <h3 className="work-title">{item.title}</h3>
       <div className="item-languages">
         {item.languages.map((language, index) => (
@@ -12,7 +18,9 @@ const WorksItems = ({ item }) => {
           </span>
         ))}
       </div>
-      <br />
+      <div className="work-description">
+        {item.description}
+      </div>
       {item.github && (
         <a
           href={item.github}
@@ -20,7 +28,7 @@ const WorksItems = ({ item }) => {
           rel="noopener noreferrer"
           className="work-button"
         >
-          <i class="bx bxl-github work-button-icon"></i>
+          <i className="bx bxl-github work-button-icon"></i>
           Code
         </a>
       )}
