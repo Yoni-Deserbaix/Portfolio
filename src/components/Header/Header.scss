@@ -2,13 +2,12 @@
 
 .navbar {
   background-color: $mainColor;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  box-shadow: $shadowColor;
   position: fixed;
   top: 0;
   width: 100%;
   left: 0;
   z-index: 1;
-  
 }
 
 .logo img {
@@ -23,12 +22,15 @@
 .navbar__ul {
   float: right;
   margin-right: 25px;
-  
 }
 .navbar__li {
   display: inline-block;
   line-height: 90px;
   margin: 0 5px;
+}
+
+.navbar__li:hover {
+  opacity: 50%;
 }
 
 .navbar__a {
@@ -39,9 +41,6 @@
   transition: all 0.2s;
 }
 
-.navbar__li:hover {
-  opacity: 50%;
-}
 
 #burger__icon {
   padding: 5px 7px;

@@ -11,7 +11,7 @@ const Skills = () => {
             <h1>Frontend</h1>
             <p>
               Maîtrise des langages de développement web tels que <b>HTML</b>,{" "}
-              <b>CSS</b>, et
+              <b>CSS/SASS</b>, et
               <b> JavaScript</b>. Expérience approfondie avec des bibliothèques
               et frameworks tels que <b>React</b>. Conception et développement
               d'interfaces utilisateur interactives et réactives.

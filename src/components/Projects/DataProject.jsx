@@ -1,3 +1,5 @@
+
+import Work1 from "../../assets/work01.png";
 import Work2 from "../../assets/work02.png";
 import Work3 from "../../assets/work03.png";
 import Work4 from "../../assets/work04.png";
@@ -8,19 +10,23 @@ import Work8 from "../../assets/work08.png";
 import Work9 from "../../assets/work09.png";
 
 export const projectsData = [
-  // {
-  //   id: 1,
-  //   image: Work1,
-  //   title: "Portfolio",
-  //   category: "React",
-  // },
+  {
+    id: 1,
+    image: Work1,
+    title: "Portfolio",
+    category: "React",
+    languages: ["React", "JavaScript ", "SASS"],
+    description: "Mon portfolio personnel créé avec React. Cette application présente mes compétences, expériences et projets de manière interactive et moderne.",
+    github: "https://github.com/Yoni-Deserbaix/Portfolio",
+    demo: "https://yoni-deserbaix.github.io/Portfolio/",
+  },
   {
     id: 2,
     image: Work2,
     title: "CineQuik 🍿🎥",
     category: "React",
     languages: ["React", "JavaScript "],
-    description: "Création d'une application cinéma avec l'API TMDB réalisée avec React",
+    description: "Un pplication de cinéma intégrant l'API TMDB, développée avec React. Explorez des films, obtenez des informations détaillées et découvrez les dernières sorties.",
     github: "https://github.com/Yoni-Deserbaix/CineQuik",
     demo: "https://yoni-deserbaix.github.io/CineQuik/",
   },
@@ -30,7 +36,7 @@ export const projectsData = [
     title: "World Flags Encyclopedia",
     category: "React",
     languages: ["React", "JavaScript"],
-    description: "Création d'une interface web pour découvrir les pays du monde avec React",
+    description: "Interface web interactive pour explorer les drapeaux du monde, construite avec React. Découvrez des informations détaillées sur chaque pays et son drapeau.",
     github: "https://github.com/Yoni-Deserbaix/World-Flags-Encyclopedia",
     demo: "https://yoni-deserbaix.github.io/World-Flags-Encyclopedia/",
 
@@ -41,7 +47,7 @@ export const projectsData = [
     title: "FOODLAND 🍔",
     category: "HTML/CSS/JS",
     languages: ["HTML", "SASS", "JavaScript"],
-    description: "Landing page du restaurant FOODLAND réalisée avec SASS",
+    description: "Landing page attrayante pour le restaurant FOODLAND, développée avec SASS. Explorez les plats et découvrez les spécialités du restaurant.",
     github: "https://github.com/Yoni-Deserbaix/FOODLAND",
     demo: "https://yoni-deserbaix.github.io/FOODLAND/",
   },
@@ -51,7 +57,7 @@ export const projectsData = [
     title: "GTA VI Landing page 🦩",
     category: "HTML/CSS/JS",
     languages: ["HTML", "CSS", "JavaScript"],
-    description: "Landing page exclusive pour le jeu vidéo tant attendu Grand Theft AUTO VI",
+    description: "Une landing page exclusive pour le jeu vidéo très attendu, Grand Theft AUTO VI. Découvrez des informations sur le jeu vidéo et sur la sortie.",
     github: "https://github.com/Yoni-Deserbaix/GTA-VI-Landing-Page",
     demo: "https://yoni-deserbaix.github.io/GTA-VI-Landing-Page/",
   },
@@ -61,7 +67,7 @@ export const projectsData = [
     title: "Shooting Game 🧟",
     category: "Mini projets JS",
     languages: ["HTML", "CSS", "JavaScript"],
-    description: "Jeu de tir avec un timer et des bonus de temps",
+    description: "Un jeu de tir divertissant avec un chronomètre et des bonus de temps. Testez vos compétences en visée et essayez d'obtenir le meilleur score.",
     github: "https://github.com/Yoni-Deserbaix/Shooting-Game-JS",
     demo: "https://yoni-deserbaix.github.io/Shooting-Game-JS/",
   },
@@ -71,7 +77,7 @@ export const projectsData = [
     title: "Password Generator 🔐",
     category: "Mini projets JS",
     languages: ["HTML", "CSS", "JavaScript"],
-    description: "Réalisation d'un générateur de mot de passe au clique du bouton",
+    description: "Créez des mots de passe robustes en un clic avec ce générateur de mots de passe. Choisissez la longueur pour répondre à vos besoins de sécurité.",
     github: "https://github.com/Yoni-Deserbaix/Password-Generator",
     demo: "https://yoni-deserbaix.github.io/Password-Generator/",
   },
@@ -81,7 +87,7 @@ export const projectsData = [
     title: "Weather App ⛅",
     category: "Mini projets JS",
     languages: ["Node.js", "Express.js", "JavaScript"],
-    description: "Réalisation d'une application météo sur un serveur Express avec Node.js",
+    description: "Une application météo réalisée sur un serveur Express avec Node.js. Obtenez des prévisions précises et actualisées pour votre emplacement.",
     github: "https://github.com/Yoni-Deserbaix/WeatherAPI-App",
   },
   {
@@ -90,7 +96,7 @@ export const projectsData = [
     title: "Password Monkey 🐵🙈",
     category: "Mini projets JS",
     languages: ["HTML", "CSS", "JavaScript"],
-    description: "Mini formulaire qui chiffre le texte lorsque le bouton est cliqué",
+    description: "Un mini formulaire amusant qui chiffre le texte lorsque le bouton est cliqué. Jouez avec des mots de passe cryptés de manière ludique.",
     github: "https://github.com/Yoni-Deserbaix/Password-Monkey",
     demo: "https://yoni-deserbaix.github.io/Password-Monkey/",
   },

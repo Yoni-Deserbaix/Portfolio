@@ -17,9 +17,7 @@
 .skills-content {
   margin-top: 50px;
   padding: 10px 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -55,7 +53,7 @@
 
 @media screen and (max-width: 768px) {
   .skills-box {
-    flex: 1; /* Ajuste la flexibilité */
+    flex: 1; 
     flex-basis: 15rem;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;

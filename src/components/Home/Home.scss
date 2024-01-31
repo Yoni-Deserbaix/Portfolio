@@ -11,8 +11,7 @@
   padding: 0 2rem;
 
   .content {
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
     justify-content: space-between;
   }
 
@@ -91,17 +90,17 @@
     position: relative;
     border: 2px solid $textColor;
     text-align: center;
-  }
 
-  .mouse-icon span {
-    width: 3px;
-    height: 8px;
-    margin: 2px auto 0;
-    display: block;
-    background: $textColor;
-    border-radius: 5px;
-    -webkit-animation: 1.2s ease infinite wheel-up-down;
-    animation: 1.2s ease infinite wheel-up-down;
+    span {
+      width: 3px;
+      height: 8px;
+      margin: 2px auto 0;
+      display: block;
+      background: $textColor;
+      border-radius: 5px;
+      -webkit-animation: 1.2s ease infinite wheel-up-down;
+      animation: 1.2s ease infinite wheel-up-down;
+    }
   }
 
   @-webkit-keyframes wheel-up-down {

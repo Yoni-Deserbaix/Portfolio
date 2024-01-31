@@ -22,6 +22,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     margin: 5rem 0 2rem;
+    color: #2d2e32;
 
     i {
       color: $textColor;
@@ -36,7 +37,7 @@
     span {
       padding: 1rem;
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: $shadowColor;
 
       i {
         font-size: 1.5rem;
