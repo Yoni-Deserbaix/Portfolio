@@ -26,7 +26,7 @@ export const projectsData = [
     title: "CineQuik 🍿🎥",
     category: "React",
     languages: ["React", "JavaScript "],
-    description: "Un application de cinéma intégrant l'API TMDB, développée avec React. Explorez des films et obtenez des informations détaillées.",
+    description: "Une application de cinéma intégrant l'API TMDB, développée avec React. Explorez des films et obtenez des informations détaillées.",
     github: "https://github.com/Yoni-Deserbaix/CineQuik",
     demo: "https://yoni-deserbaix.github.io/CineQuik/",
   },
