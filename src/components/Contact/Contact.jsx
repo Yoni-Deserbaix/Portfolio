@@ -13,7 +13,7 @@ const Contact = () => {
           <div className="contact-wrapper" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
             <div className="contact-container" >
               <span>
-                <i class="bx bxs-map"></i>{" "}
+                <i className="bx bxs-map"></i>{" "}
               </span>
               <div className="contact-box">
                 <h3>Lieu</h3>
@@ -22,7 +22,7 @@ const Contact = () => {
             </div>
             <div className="contact-container">
               <span>
-                <i class="bx bxs-envelope"></i>{" "}
+                <i className="bx bxs-envelope"></i>{" "}
               </span>
               <div className="contact-box">
                 <h3>Mail</h3>
@@ -30,7 +30,7 @@ const Contact = () => {
                   href="mailto:yonideserbaix@gmail.com"
                   rel="noreferrer"
                   target="_blank"
-                  class="social-button"
+                  className="social-button"
                 >
                   yonideserbaix@gmail.com
                 </a>

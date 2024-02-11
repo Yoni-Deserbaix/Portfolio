@@ -28,7 +28,7 @@ function Header() {
       </a>
       <input type="checkbox" id="check" onChange={handleClick} />
       <label htmlFor="check" className="navbar__burger__menu">
-        <i class="bx bx-menu" id="burger__icon"></i>
+        <i className="bx bx-menu" id="burger__icon"></i>
       </label>
       <ul
         className="navbar__ul"

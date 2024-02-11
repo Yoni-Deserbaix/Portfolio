@@ -7,11 +7,7 @@ const About = () => {
     <section className="about" id="about">
       <div className="container">
         <div className="about-content">
-          <div
-            className="about-img"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
+          <div className="about-img" data-aos="fade-up" data-aos-duration="500">
             <img src={aboutPhoto} className="about-img" alt="" />
           </div>
           <div className="about-text">
@@ -33,25 +29,25 @@ const About = () => {
               d'apprentissage me préparent à <b>contribuer activement</b> à des
               projets captivants. <br />
               <br />
-              <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
-              Explorez mon portfolio pour découvrir comment je peux apporter une
-              perspective unique et des compétences solides à <b>vos projets</b>
-              😊!
+              <p
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="300"
+              >
+                Explorez mon portfolio pour découvrir comment je peux apporter
+                une perspective unique et des compétences solides à{" "}
+                <b>vos projets</b>
+                😊!
               </p>
             </p>
-            {/* <p>
-            Hello 👋! Je m'appelle <b>Yoni</b>, un <b>développeur de 20 ans</b> au parcours
-              atypique, de l'électricité et des environnements connectés à la <b>programmation</b> et l'
-              <b>administration de réseaux</b>. Autodidacte déterminé,  mon
-              exploration du <b>JavaScript</b> associé à <b>React</b> a donné
-              vie à des projets web <b>créatifs</b> et <b>innovants</b>. Mon enthousiasme
-              pour le <b>développement Frontend</b> me prépare à contribuer
-              activement à des projets captivants. Explorez mon portfolio pour
-              découvrir comment je peux apporter une perspective unique à{" "}
-              <b>vos projets !</b>😊
-            </p> */}
 
-            <a href={DownloadCV} className="DownloadCV"  data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
+            <a
+              href={DownloadCV}
+              className="DownloadCV"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="300"
+            >
               Download CV <i class="bx bxs-download"></i>
             </a>
           </div>

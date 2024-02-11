@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { projectsData } from "./DataProject";
 import { projectsNav } from "./DataProject";
 import WorksItems from "./WorksItems";

@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+
+// https://fkhadra.github.io/react-toastify/introduction/
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Bounce } from "react-toastify";

@@ -18,9 +18,7 @@ const WorksItems = ({ item }) => {
           </span>
         ))}
       </div>
-      <div className="work-description">
-        {item.description}
-      </div>
+      <div className="work-description">{item.description}</div>
       {item.github && (
         <a
           href={item.github}

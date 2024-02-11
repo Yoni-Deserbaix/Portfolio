@@ -1,5 +1,4 @@
 import "./Home.scss";
-import memojiHome from "../../assets/memoji-home.png";
 
 const Home = () => {
   return (
@@ -25,27 +24,27 @@ const Home = () => {
                 href="http://linkedin.com/in/yoni-deserbaix"
                 target="_blank"
                 rel="noreferrer"
-                class="social-button"
+                className="social-button"
               >
-                <i class="bx bxl-linkedin-square"></i>
+                <i className="bx bxl-linkedin-square"></i>
                 LinkedIn
               </a>
               <a
                 href="https://github.com/Yoni-Deserbaix"
                 rel="noreferrer"
                 target="_blank"
-                class="social-button"
+                className="social-button"
               >
-                <i class="bx bxl-github"></i>
+                <i className="bx bxl-github"></i>
                 Github
               </a>
               <a
                 href="mailto:yonideserbaix@gmail.com"
                 rel="noreferrer"
                 target="_blank"
-                class="social-button"
+                className="social-button"
               >
-                <i class="bx bxs-envelope"></i> yonideserbaix@gmail.com
+                <i className="bx bxs-envelope"></i> yonideserbaix@gmail.com
               </a>
               <br />
             </span>
@@ -60,8 +59,8 @@ const Home = () => {
             />
           </div>
         </div>
-        <a class="hero-mouse anchor" href="#about">
-          <div class="mouse-icon">
+        <a className="hero-mouse anchor" href="#about">
+          <div className="mouse-icon">
             <span></span>
           </div>
         </a>{" "}

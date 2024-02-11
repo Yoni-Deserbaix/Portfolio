@@ -10,14 +10,14 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <i class="bx bxl-linkedin-square"></i>
+          <i className="bx bxl-linkedin-square"></i>
         </a>
         <a
           href="https://github.com/Yoni-Deserbaix"
           target="_blank"
           rel="noreferrer"
         >
-          <i class="bx bxl-github"></i>
+          <i className="bx bxl-github"></i>
         </a>
       </div>
     </section>

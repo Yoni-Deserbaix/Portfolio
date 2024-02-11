@@ -1,4 +1,3 @@
-import React from "react";
 import "./Projects.scss";
 import Works from "./Works";
 const Projects = () => {
@@ -13,7 +12,7 @@ const Projects = () => {
        
         Parce-que <b>quelques images</b> valent mieux que{" "}
         <b>10 000 lignes de code</b>, je vous laisse découvrir ci-dessous
-        quelques <b>projets</b> que j'ai pu réaliser !
+        quelques{""}<b>projets</b> que j'ai pu réaliser !
       </span>
         </div>
 
