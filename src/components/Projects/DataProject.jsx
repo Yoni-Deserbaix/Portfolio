@@ -8,8 +8,20 @@ import Work6 from "../../assets/work06.png";
 import Work7 from "../../assets/work07.png";
 import Work8 from "../../assets/work08.png";
 import Work9 from "../../assets/work09.png";
+import Work10 from "../../assets/work10.png";
+
 
 export const projectsData = [
+  {
+    id: 10,
+    image: Work10,
+    title: "MyBlog",
+    category: "React",
+    languages: ["Next.JS", "TypeScript ", "Tailwind CSS"],
+    description: "Mon blog, construit avec Next.JS, est une plateforme où je partage mes articles, mes astuces et mes expériences personnelles dans divers domaines.",
+    github: "https://github.com/Yoni-Deserbaix/myblog",
+    demo: "https://yoni-deserbaix-my-blog.vercel.app/",
+  },
   {
     id: 1,
     image: Work1,
