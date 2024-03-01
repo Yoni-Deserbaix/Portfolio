@@ -12,7 +12,7 @@ const About = () => {
           </div>
           <div className="about-text">
             <h3 data-aos="fade-up" data-aos-duration="300">
-              A propos de moi
+            À propos de moi
             </h3>
 
             <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="300">
@@ -48,7 +48,7 @@ const About = () => {
               data-aos-delay="500"
               data-aos-duration="300"
             >
-              Download CV <i class="bx bxs-download"></i>
+              Download CV <i className="bx bxs-download"></i>
             </a>
           </div>
         </div>
