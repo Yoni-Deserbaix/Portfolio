@@ -12,23 +12,22 @@ const About = () => {
           </div>
           <div className="about-text">
             <h3 data-aos="fade-up" data-aos-duration="300">
-            À propos de moi
+              À propos de moi
             </h3>
 
             <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="300">
-              Hello 👋! je m'appelle <b>Yoni</b>, je suis un jeune
-              <b> développeur de 20 ans</b> au parcours atypique, ayant évolué
-              dans l'électricité et des environnements connectés à l'univers de
-              la <b>programmation</b>, explorant ainsi les frontières créatives
-              de l'<b>informatique</b>. Mon expertise en <b>programmation</b> et
-              en <b>administration de réseaux</b> s'est forgée au fil de mes
-              expériences. En tant qu'<b>autodidacte déterminé</b>, mon
-              exploration du <b>JavaScript</b> associé à <b>React</b> a donné
-              vie à des projets web <b>créatifs</b> et <b>innovants</b>. Ma
-              passion pour le <b>développement Frontend</b> et ma soif
-              d'apprentissage me préparent à <b>contribuer activement</b> à des
-              projets captivants. <br />
-              <br />
+              Hello 👋! Je m&apos;appelle <b>Yoni</b>, je suis un jeune{" "}
+              <b>développeur de 20 ans</b> au parcours atypique, ayant évolué
+              dans l&apos;électricité et des environnements connectés à
+              l&apos;univers de la <b>programmation</b>, explorant ainsi les
+              frontières créatives de l&apos;informatique. Mon expertise en{" "}
+              <b>programmation</b> et en <b>administration de réseaux</b>{" "}
+              s&apos;est forgée au fil de mes expériences. En tant
+              qu&apos;autodidacte déterminé, mon exploration du{" "}
+              <b>JavaScript</b> associé à <b>React</b> a donné vie à des projets
+              web <b>créatifs</b> et <b>innovants</b>. Ma passion pour le{" "}
+              <b>développement Frontend</b> et ma soif d&apos;apprentissage me
+              préparent à <b>contribuer activement</b> à des projets captivants.
               <p
                 data-aos="fade-up"
                 data-aos-delay="500"
@@ -40,15 +39,17 @@ const About = () => {
                 😊!
               </p>
             </p>
-
             <a
               href={DownloadCV}
               className="DownloadCV"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="300"
+              target="_blank"
+              rel="noreferrer"
             >
-              Download CV <i className="bx bxs-download"></i>
+              Download CV
+              <i className="bx bxs-download"> </i>
             </a>
           </div>
         </div>
