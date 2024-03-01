@@ -1,5 +1,5 @@
 import "./About.scss";
-import DownloadCV from "../../assets/Yoni Deserbaix CV 2024.pdf";
+import DownloadCV from "../../assets/DESERBAIX_Yoni_CV_ENI.pdf";
 import aboutPhoto from "../../assets/about.jpg";
 
 const About = () => {
