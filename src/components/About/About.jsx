@@ -45,8 +45,6 @@ const About = () => {
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="300"
-              target="_blank"
-              rel="noreferrer"
             >
               Download CV
               <i className="bx bxs-download"> </i>
