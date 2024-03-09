@@ -1,64 +1,98 @@
 @import "../../styles/index.scss";
 
-.skills {
-  background-color: $whitesmoke;
-}
-
 .skills-section {
-  margin: auto;
+  padding-top: 28px;
+  padding-bottom: 14px;
+  background-color: $whitesmoke;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  padding-top: 4rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding: 100px 0rem;
+  margin-top: 20px;
+  gap: 28px;
 }
 
-.skills-title {
-  padding: 50px;
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  margin-left: 0;
 }
 
-.skills-content {
-  margin-top: 50px;
-  padding: 10px 2rem;
-  @extend %flex-center;
+.category-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.skills-list {
+  display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-inline: 2rem;
+  border-radius: 15px;
+  box-shadow: $shadowColor;
 }
 
-.skills-box {
-  flex: 1;
-  flex-basis: 15rem;
-  padding: 3rem 2rem 4rem;
-  border-radius: 2rem;
+.skill {
   text-align: center;
-  border: 0.2rem solid $whitesmoke;
-  transition: transform 0.2s ease-in-out;
+  margin: 15px;
+  flex-wrap: wrap;
+  gap: 10;
 }
 
-.skills-box:hover {
-  border-color: $textColor;
-  transform: scale(1.02);
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.skills-box i {
-  font-size: 7rem;
-}
-
-.skills-box h3 {
-  font-size: 2.6rem;
-}
-
-.skills-box p {
+.skill-name {
+  font-weight: 600;
   font-size: 1rem;
-
-  margin: 1rem 0 3rem;
+  color: #2d2e32;
 }
 
-@media screen and (max-width: 768px) {
-  .skills-box {
-    flex: 1; 
-    flex-basis: 15rem;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: 0.2rem solid $whitesmoke;
-    transition: transform 0.2s ease-in-out;
+@media (max-width: 1023px) {
+  .skills-section {
+    padding-top: 14px;
+    padding-bottom: 0;
+  }
+
+  .skill-name {
+    font-size: 0.75rem;
+  }
+  .skills-container {
+    gap: 14px;
+  }
+  .skills-category {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-container {
+    margin-top: 10px;
   }
 }
