@@ -27,7 +27,7 @@ export default function Header() {
     <nav className="z-[1] py-6 flex items-center justify-between ">
       <a
         href="#home"
-        className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 pl-10"
+        className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2"
       >
         Yoni Deserbaix 🦇
       </a>
