@@ -40,6 +40,8 @@ export default function Hero() {
             <div className="w-32 h-32 rounded-2xl bg bg-indigo-500"></div>
             <div className="w-32 h-32 rounded-full bg bg-green-500"></div>
           </div>
+
+          <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
       </div>
       {/* Linkedin 
