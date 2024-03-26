@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     // navbar
-    <nav className="bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] fixed w-full z-[1] left-0 top-0">
+    <nav className=" fixed w-full z-[1] left-0 top-0">
       <div className="flex items-center justify-between">
         <strong className="logo">
           <a href="#home">

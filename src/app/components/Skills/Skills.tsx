@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative h-full pt-28 pb-14 max-lg:pt-14  max-md:py-24 bg-[whitesmoke]"
+      className="relative h-full pt-28 pb-14 max-lg:pt-14  max-md:py-24"
     >
       <div className="container mt-4 w-4/5 m-auto">
         <h3 className="text-xl font-extrabold">COMPÉTENCES</h3>

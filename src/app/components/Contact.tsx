@@ -11,7 +11,7 @@ export default function Contact() {
           </h1>
           <p
             id="contact-hook-sentence"
-            className="leading-normal text-[1.6rem] font-extrabold text-[#2d2e32] mt-20 mb-8 mx-0"
+            className="leading-normal text-[1.6rem] font-extrabold mt-20 mb-8 mx-0"
           >
             Une opportunité d'alternance ? Contactez-moi ! 👇
           </p>
