@@ -7,24 +7,31 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="min-h-[60vh] flex items-center justify-between">
-      <div>
-        <h1>
-          Salut! 👋 <br /> Je suis <span>{"Yoni Deserbaix."}</span>
+    <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between">
+      <div className="space-y-10 text-center lg:text-left">
+        <h1 className="text-4xl lg:text-5xl font-bold">
+          Salut! 👋 <br /> Je suis{" "}
+          <span className="underline underline-offset-8 decoration-green-500">
+            {"Yoni Deserbaix."}
+          </span>
         </h1>
-        <p>
+        <p className="md:w-96 text-lg text-gray-300">
           {
             "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent."
           }
         </p>
-        <Link href={"mailto:yonideserbaix@gmail.com"}>
+        <Link href={"mailto:yonideserbaix@gmail.com"} className="inline-block">
           <div>
-            <h1>Me contacter 📪</h1>
+            <h1 className="text-3xl font-bold hover:text-green-400 transition-all">
+              Me contacter 📪
+              <div className="w-40 h-3 bg-green-500 rounded-full"></div>
+              <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
+            </h1>
           </div>
         </Link>
       </div>
       <div>
-        <div className="w-72 h-72 space-y-3 -rotate-[30deg]">
+        <div className="w-72 h-72 space-y-3 -rotate-[30deg] ">
           <div className="flex gap-3 translate-x-8">
             <div className="w-32 h-32 rounded-2xl bg bg-green-500"></div>
             <div className="w-32 h-32 rounded-full bg bg-indigo-500"></div>
