@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="z-[1] py-4 flex items-center justify-between">
+    <nav className="z-[1] py-6 flex items-center justify-between ">
       <a
         href="#home"
         className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 pl-10"
@@ -49,7 +49,7 @@ export default function Header() {
       </label>
 
       <ul
-        className="flex gap-5 mr-[25px] max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-black max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col"
+        className="flex gap-10 mr-[25px] max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-background max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col"
         style={isNavbarOpen ? openNavbar : closeNavbar}
       >
         <li className="hover:scale-110 transition duration-200  max-lg:block">
@@ -68,7 +68,7 @@ export default function Header() {
             href="#skills"
             onClick={handleClick}
           >
-            Compétences
+            Skills
           </a>
         </li>
         <li className=" hover:scale-110 transition duration-200">
