@@ -49,7 +49,7 @@ export default function Header() {
       </label>
 
       <ul
-        className="flex gap-10 mr-[25px] max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-background max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col"
+        className="flex gap-10 mr-[25px] max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-background max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col z-10"
         style={isNavbarOpen ? openNavbar : closeNavbar}
       >
         <li className="hover:scale-110 transition duration-200  max-lg:block">
