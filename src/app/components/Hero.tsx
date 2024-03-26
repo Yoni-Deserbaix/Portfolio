@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import memojiHome from "../assets/memoji-home.png";
+import memojiHome from "../assets/memoji-favicon.png";
 
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
+import { MovingBorderBtn } from "./moving-border";
 
 export default function Hero() {
   return (
@@ -30,9 +31,9 @@ export default function Hero() {
           </div>
         </Link>
       </div>
-      <div>
-        <div className="w-72 h-72 space-y-3 -rotate-[30deg] ">
-          <div className="flex gap-3 translate-x-8">
+      <div className="relative max-sm:pt-16">
+        <div className="relative w-72 h-72 space-y-3 -rotate-[30deg]">
+          <div className="flex gap-3 translate-x-8 ">
             <div className="w-32 h-32 rounded-2xl bg bg-green-500"></div>
             <div className="w-32 h-32 rounded-full bg bg-indigo-500"></div>
           </div>
@@ -42,6 +43,18 @@ export default function Hero() {
           </div>
 
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
+        </div>
+        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-16">
+          <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold ">
+            {/* <Image
+              src={memojiHome.src}
+              alt="memoji"
+              width={40}
+              height={40}
+              className="absolute left-[0.2rem] -translate-x-1 -translate-y-1"
+            ></Image> */}
+            <p>📢 Disponible pour une alternance! </p>
+          </MovingBorderBtn>
         </div>
       </div>
       {/* Linkedin 
