@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import { skillsData } from "./DataSkills";
+import Title from "../Title";
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="relative h-full pt-28 pb-14 max-lg:pt-14  max-md:py-24"
-    >
-      <div className="container mt-4 w-4/5 m-auto">
+    <section id="skills">
+      <Title
+        text="Skills 🔪"
+        className="flex flex-col mt-28 items-center justify-center text-3xl -rotate-6"
+      />
+      {/* <div className="container mt-4 w-4/5 m-auto">
         <h3 className="text-xl font-extrabold">COMPÉTENCES</h3>
       </div>
       <div className="flex flex-col items-center w-full mt-20 gap-28 max-xl:gap-14 max-lg:mt-10">
@@ -37,7 +39,7 @@ export default function Skills() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
