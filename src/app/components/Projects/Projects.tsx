@@ -1,8 +1,7 @@
 import React from "react";
-import Works from "./Works";
 import Image from "next/image";
 
-export default function () {
+export default function Projects() {
   return (
     <section
       className="work-section  w-3/5 m-auto px-8 py-[100px] max-md:w-full max-md:m-auto max-md:py-24"
@@ -27,8 +26,6 @@ export default function () {
           quelques <b>projets</b> que j'ai pu réaliser !
         </div>
       </div>
-
-      <Works />
     </section>
   );
 }
