@@ -2,6 +2,7 @@ import React from "react";
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
 import { MovingBorderBtn } from "./ui/moving-border";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -25,6 +26,11 @@ export default function Hero() {
               <div className="w-40 h-3 bg-green-500 rounded-full"></div>
               <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
             </h1>
+            <div className="flex p-6 gap-5">
+              <Linkedin />
+              <Github />
+              <Mail />
+            </div>
           </div>
         </Link>
       </div>

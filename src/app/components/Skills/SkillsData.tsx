@@ -1,10 +1,10 @@
 import {
   SiCplusplus,
+  SiFigma,
   SiGit,
   SiJavascript,
   SiMysql,
   SiNextdotjs,
-  SiNodedotjs,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -32,19 +32,19 @@ export const skillsData = [
     Icon: SiTypescript,
   },
   {
-    text: "Git",
-    Icon: SiGit,
-  },
-  {
-    text: "Node.js",
-    Icon: SiNodedotjs,
-  },
-  {
     text: "C++",
     Icon: SiCplusplus,
   },
   {
     text: "SQL",
     Icon: SiMysql,
+  },
+  {
+    text: "Git",
+    Icon: SiGit,
+  },
+  {
+    text: "Figma",
+    Icon: SiFigma,
   },
 ];
