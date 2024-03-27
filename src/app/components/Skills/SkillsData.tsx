@@ -10,7 +10,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-
 export const skillsData = [
   {
     text: "React",

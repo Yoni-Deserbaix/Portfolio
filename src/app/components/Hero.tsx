@@ -1,10 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import memojiHome from "../assets/memoji-favicon.png";
-
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
-import { MovingBorderBtn } from "./moving-border";
+import { MovingBorderBtn } from "./ui/moving-border";
 
 export default function Hero() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Title from "../Title";
+import Title from "../ui/Title";
 import { HoverEffect } from "../ui/card-hover-effect";
 import { skillsData } from "./SkillsData";
 
