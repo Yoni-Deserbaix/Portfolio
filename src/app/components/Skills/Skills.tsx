@@ -1,15 +1,65 @@
+"use client";
 import React from "react";
-import Image from "next/image";
-import { skillsData } from "./DataSkills";
 import Title from "../Title";
+import { HoverEffect } from "../ui/card-hover-effect";
+import {
+  SiCplusplus,
+  SiGit,
+  SiJavascript,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 export default function Skills() {
+  const skills = [
+    {
+      text: "React",
+      Icon: SiReact,
+    },
+    {
+      text: "Next.js",
+      Icon: SiNextdotjs,
+    },
+    {
+      text: "Tailwind",
+      Icon: SiTailwindcss,
+    },
+    {
+      text: "JavaScript",
+      Icon: SiJavascript,
+    },
+    {
+      text: "TypeScript",
+      Icon: SiTypescript,
+    },
+    {
+      text: "Git",
+      Icon: SiGit,
+    },
+    {
+      text: "Node.js",
+      Icon: SiNodedotjs,
+    },
+    {
+      text: "C++",
+      Icon: SiCplusplus,
+    },
+    {
+      text: "SQL",
+      Icon: SiMysql,
+    },
+  ];
   return (
-    <section id="skills">
+    <section id="skills" className="max-w-5xl mx-auto px-8">
       <Title
         text="Skills 🔪"
         className="flex flex-col mt-28 items-center justify-center text-3xl -rotate-6"
       />
+      <HoverEffect items={skills} />
       {/* <div className="container mt-4 w-4/5 m-auto">
         <h3 className="text-xl font-extrabold">COMPÉTENCES</h3>
       </div>
