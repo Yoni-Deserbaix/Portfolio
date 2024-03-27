@@ -18,7 +18,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid  md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid  max-lg:grid-cols-2  lg:grid-cols-3  py-10",
         className
       )}
     >
@@ -51,7 +51,7 @@ export const HoverEffect = ({
             <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500 cursor-pointer">
               <div className="py-10 z-50 relative space-y-50">
                 <Icon className="w-8 h-8 mx-auto" />
-                <p className="pt-4 font-bold text-center text-gray-300">
+                <p className="text-sm pt-4 font-bold text-center text-gray-300">
                   {item.text}
                 </p>
 
