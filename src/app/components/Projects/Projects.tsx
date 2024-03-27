@@ -14,6 +14,8 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import Title from "../ui/Title";
+import { Link } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function Projects() {
   const projects = [
@@ -52,6 +54,17 @@ export default function Projects() {
         text="Projects 🎨"
         className="flex flex-col mt-28 items-center justify-center text-3xl rotate-6"
       />
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 pt-20">
+        {projects.map((project, index) => {
+          return (
+            <Link href={project.link} key={index}>
+              <div className={cn("p-5 rounded-md", project.background)}></div>
+            </Link>
+          );
+        })}
+        ;
+      </div>
     </section>
   );
 }

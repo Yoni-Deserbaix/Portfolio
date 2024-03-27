@@ -20,9 +20,9 @@ export default function Home() {
       </div>
       <div className="max-w-7xl mx-auto p-5 pt-20">
         <Skills />
+        <Projects />
       </div>
 
-      <Projects />
       <Contact />
       <Footer />
     </div>
