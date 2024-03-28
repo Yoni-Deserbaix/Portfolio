@@ -22,11 +22,13 @@ export default function Projects() {
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"
                 >
-                  <h2>{project.title}</h2>
-                  <div className="flex items-center gap-5">
-                    {project.stack.map((Icon, index) => {
-                      return <Icon className="w-8 h-8" key={index} />;
-                    })}
+                  <div className="space-y-1">
+                    <h2 className="text-xl font-bold">{project.title}</h2>
+                    <div className="flex items-center gap-5">
+                      {project.stack.map((Icon, index) => {
+                        return <Icon className="w-8 h-8" key={index} />;
+                      })}
+                    </div>
                   </div>
                 </DirectionAwareHover>
               </div>
