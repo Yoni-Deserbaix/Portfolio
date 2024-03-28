@@ -13,7 +13,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import Title from "../ui/Title";
+import Title from "../../../components/ui/Title";
 import { Link } from "lucide-react";
 import { cn } from "@/lib/utils";
 

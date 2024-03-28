@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Title from "../ui/Title";
-import { HoverEffect } from "../ui/card-hover-effect";
+import Title from "../../../components/ui/Title";
+import { HoverEffect } from "../../../components/ui/card-hover-effect";
 import { skillsData } from "./SkillsData";
 
 export default function Skills() {

@@ -1,7 +1,7 @@
 import React from "react";
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
-import { MovingBorderBtn } from "./ui/moving-border";
+import { MovingBorderBtn } from "../../components/ui/moving-border";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
