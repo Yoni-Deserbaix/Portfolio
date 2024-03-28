@@ -13,7 +13,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import Title from "../../../components/ui/Title";
-import { Link } from "lucide-react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
