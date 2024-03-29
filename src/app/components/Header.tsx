@@ -93,7 +93,7 @@ export default function Header() {
           <a
             className="navbar__a text-lg font-bold py-[7px] max-lg:text-xl"
             onClick={() => {
-              window.open("", "_blank");
+              window.open("/assets/DESERBAIX_Yoni_CV_ENI.pdf", "_blank");
             }}
           >
             CV
