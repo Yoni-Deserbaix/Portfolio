@@ -12,7 +12,7 @@ export default function Home() {
         "
     >
       <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto max-xl:px-8">
           <Header />
           <Hero />
         </div>

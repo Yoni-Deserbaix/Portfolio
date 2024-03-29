@@ -40,16 +40,16 @@ export default function Header() {
       />
       <label
         htmlFor="check"
-        className="navbar__burger__menu hidden text-[30px] mr-[40px] cursor-pointer max-lg:block"
+        className="navbar__burger__menu hidden text-[30px]  cursor-pointer max-lg:block"
       >
         <i
-          className="bx bx-menu text-center rounded hover:bg-black p-1"
+          className="bx bx-menu text-center rounded hover:bg-black "
           id="burger__icon"
         ></i>
       </label>
 
       <ul
-        className="flex gap-10 mr-[25px] max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-background max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col z-10"
+        className="flex gap-10  max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-black max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col max-lg:pt-10 z-10"
         style={isNavbarOpen ? openNavbar : closeNavbar}
       >
         <li className="hover:scale-110 transition duration-200  max-lg:block">
@@ -87,6 +87,16 @@ export default function Header() {
             onClick={handleClick}
           >
             Contact
+          </a>
+        </li>
+        <li className=" hover:scale-110 transition duration-200">
+          <a
+            className="navbar__a text-lg font-bold py-[7px] max-lg:text-xl"
+            onClick={() => {
+              window.open("", "_blank");
+            }}
+          >
+            CV
           </a>
         </li>
       </ul>
