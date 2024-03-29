@@ -14,7 +14,7 @@ export default function Contact() {
             Une opportunité d'alternance ? Contactez-moi 👇
           </p>
         </div>
-        
+
         <div className="flex justify-evenly max-lg:flex-col max-lg:gap-4 mt-14 max-xl:pl-16">
           <div className="contact-container flex items-center gap-4">
             <span className="p-4 rounded-[50%] hover:scale-110 transition-all">
@@ -41,6 +41,16 @@ export default function Contact() {
               </a>
             </div>
           </div>
+          <Title
+            text="CV"
+            href=""
+            target="_blank"
+            rel="noreferrer"
+            className=" transition-all duration-[0.2s] text-center max-w-[200px] mt-[15px] px-12 py-[0.7rem] rounded-[5px] border-[none]  text-xl"
+          >
+            <i className="fa-solid fa-download" />
+            CV
+          </Title>
         </div>
       </div>
     </section>
