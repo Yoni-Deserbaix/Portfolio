@@ -13,8 +13,8 @@ export default function Contact() {
           <p className="text-2xl font-bold ">Une opportunité d'alternance ?</p>
           <h1 className="text-2xl font-bold hover:text-green-400 transition-all">
             Contactez-moi 👇
-            <div className="w-48 h-3 bg-green-500 rounded-full"></div>
-            <div className="w-48 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
+            <div className="w-48 h-2 bg-green-500 rounded-full"></div>
+            <div className="w-48 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
           </h1>
         </div>
 

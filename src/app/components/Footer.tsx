@@ -1,27 +1,31 @@
-export default function () {
+import { Github, Linkedin } from "lucide-react";
+import Link from "next/link";
+import React from "react";
+
+export default function Footer() {
   return (
-    <footer className="flex items-center flex-row justify-evenly px-2.5 py-16">
-      <p className="text-base text-[whitesmoke] mb-[15px] max-lg:text-sm max-lg:pl-4 max-lg:w-3/4">
-        Copyright © 2024 • Make with ❤️ By Yoni Deserbaix
-      </p>
-      <div className="socials ">
-        <a
-          href="http://linkedin.com/in/yoni-deserbaix"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Lien LinkedIn"
-        >
-          <i className="bx bxl-linkedin-square text-[1.8rem] text-[whitesmoke] transition-all duration-[0.2s] mr-[15px] hover:opacity-[70%]"></i>
-        </a>
-        <a
-          href="https://github.com/Yoni-Deserbaix"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Lien Github"
-        >
-          <i className="bx bxl-github text-[1.8rem] text-[whitesmoke] transition-all duration-[0.2s] mr-[15px] hover:opacity-[70%]"></i>
-        </a>
+    <div className="border-t mt-10">
+      <div className="m-10 text-center text-lg">
+        <div className="font-bold underline underline-offset-8 decoration-green-500 rotate-2 hover:text-green-400 transition-all">
+          Yoni Deserbaix 🦇
+        </div>
+        <div className="mt-3 gap-4 flex items-center justify-center  ">
+          <Link
+            href="https://www.linkedin.com/in/yoni-deserbaix/"
+            target="_blank"
+            aria-label="Navigate to the LinkedIn account"
+          >
+            <Linkedin size={20} />
+          </Link>
+          <Link
+            href="https://github.com/Yoni-Deserbaix"
+            target="_blank"
+            aria-label="Navigate to the Github account"
+          >
+            <Github size={20} />
+          </Link>
+        </div>
       </div>
-    </footer>
+    </div>
   );
 }

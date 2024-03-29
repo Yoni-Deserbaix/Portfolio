@@ -8,7 +8,7 @@ import Skills from "./components/Skills/Skills";
 export default function Home() {
   return (
     <div
-      className="min-h-[400vh] bg-black mx-auto overflow-hidden 
+      className="bg-black mx-auto overflow-hidden 
         "
     >
       <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative">
@@ -21,10 +21,9 @@ export default function Home() {
       <div className="max-w-7xl mx-auto p-5 pt-20">
         <Skills />
         <Projects />
-      <Contact />
+        <Contact />
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 }
