@@ -1,7 +1,6 @@
 import React from "react";
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
-import { MovingBorderBtn } from "../../components/ui/moving-border";
 import { Github, Linkedin, Mail } from "lucide-react";
 import ResumeBtn from "@/components/ui/ResumeBtn";
 
@@ -36,7 +35,7 @@ export default function Hero() {
         </Link>
       </div>
       <div className="relative max-lg:pt-16">
-        <div className="relative w-72 h-72 space-y-3 -rotate-[30deg]">
+        <div className="relative w-72 h-72 space-y-3 -rotate-[30deg] my-animation max-lg:pl-8">
           <div className="flex gap-3 translate-x-8 ">
             <div className="w-32 h-32 rounded-2xl bg bg-green-500"></div>
             <div className="w-32 h-32 rounded-full bg bg-indigo-500"></div>
@@ -48,7 +47,7 @@ export default function Hero() {
 
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-16">
+        <div className="absolute bottom-5 lg:bottom-14 left-3">
           <ResumeBtn />
         </div>
       </div>

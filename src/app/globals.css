@@ -91,3 +91,22 @@
   border-radius: 50%;
   box-shadow: 0 0 200px 130px #c026d3;
 }
+
+@keyframes wheel-up-down {
+}
+
+@keyframes animimg {
+  0% {
+    transform: translateY(0%) rotate(-30deg);
+  }
+  50% {
+    transform: translateY(-1rem) rotate(-30deg);
+  }
+  100% {
+    transform: translateY(0%) rotate(-30deg);
+  }
+}
+
+.my-animation {
+  animation: animimg 4s ease-in-out infinite;
+}
