@@ -11,28 +11,44 @@ export default function Hero() {
         <h1 className="text-4xl lg:text-5xl font-bold  pt-8 max-sm:text-[1.7rem]">
           Salut! 👋 <br /> Je suis{" "}
           <span className="underline underline-offset-8 decoration-green-500">
-            {"Yoni Deserbaix."}
+            Yoni Deserbaix.
           </span>
         </h1>
         <p className="md:w-96 text-lg text-gray-300 max-sm:text-base">
-          {
-            "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent."
-          }
+          Basé à Nantes, je suis un développeur Frontend passionné par la
+          construction d'applications web modernes que les utilisateurs adorent.
         </p>
-        <Link href={"mailto:yonideserbaix@gmail.com"} className="inline-block">
-          <div>
-            <h1 className="text-3xl font-bold hover:text-green-400 transition-all max-sm:text-2xl">
-              Me contacter 📪
-              <div className="w-40 h-3 bg-green-500 rounded-full"></div>
-              <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
-            </h1>
-            <div className="flex p-6 gap-5 max-lg:justify-center">
+        <div>
+          <h1 className="text-3xl font-bold hover:text-green-400 transition-all max-sm:text-2xl">
+            Me contacter 📪
+            <div className="w-40 h-3 bg-green-500 rounded-full"></div>
+            <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
+          </h1>
+          <div className="flex p-6 gap-5 max-lg:justify-center">
+            <Link
+              href="https://www.linkedin.com/in/yoni-deserbaix/"
+              target="_blank"
+              aria-label="Navigate to the LinkedIn account"
+              className="hover:scale-110 transition-all"
+            >
               <Linkedin />
+            </Link>
+            <Link
+              href="https://github.com/Yoni-Deserbaix"
+              target="_blank"
+              aria-label="Navigate to the Github account"
+              className="hover:scale-110 transition-all"
+            >
               <Github />
+            </Link>
+            <Link
+              href="mailto:yonideserbaix@gmail.com"
+              className="hover:scale-110 transition-all"
+            >
               <Mail />
-            </div>
+            </Link>
           </div>
-        </Link>
+        </div>
       </div>
       <div className="relative max-lg:pt-16">
         <div className="relative w-72 h-72 space-y-3 -rotate-[30deg] my-animation max-lg:pl-8">
