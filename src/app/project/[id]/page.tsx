@@ -2,6 +2,7 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import { ProjectsData } from "@/app/components/Projects/ProjectsData";
 import Title from "@/components/ui/Title";
+import Link from "next/link";
 import { IconType } from "react-icons";
 
 type ProjectType = {
@@ -20,7 +21,12 @@ export default function Home({ params }: ProjectType) {
 
   return (
     <div className="max-w-7xl mx-auto max-xl:px-8">
-      <Header />
+        <div className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 pt-5">
+
+      <Link href="/" >
+          Yoni Deserbaix 🦇
+      </Link>
+        </div>
       <Title
         text={project.title}
         className="flex flex-col mt-28 items-start justify-center text-3xl"
