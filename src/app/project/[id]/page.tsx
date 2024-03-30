@@ -86,8 +86,7 @@ export default function Home({ params }: ProjectType) {
         </div>
       </div>
       <div className="pt-12">
-
-      <Footer />
+        <Footer />
       </div>
     </div>
   );
