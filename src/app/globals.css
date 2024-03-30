@@ -92,9 +92,6 @@
   box-shadow: 0 0 200px 130px #c026d3;
 }
 
-@keyframes wheel-up-down {
-}
-
 @keyframes animimg {
   0% {
     transform: translateY(0%) rotate(-30deg);
