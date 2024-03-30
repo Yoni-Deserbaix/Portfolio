@@ -37,11 +37,11 @@ export const ProjectsData = [
     title: "MyBlog",
     subtitle: "Réalisation de mon blog",
     description:
-      "Mon blog personnel réalisé avec Next.js. L'utilisation decomposants serveurs et clients, ainsi que des routes dynamiques, m'ont permis de créer une expérience de navigation flexible et intuitive pour mes lecteurs.",
+      "Mon blog, construit avec Next.JS, est une plateforme où je partage mes articles, mes astuces et mes expériences personnelles dans divers domaines. L'utilisation de composants serveurs et clients, ainsi que des routes dynamiques, m'ont permis de créer une expérience de navigation flexible et intuitive pour mes lecteurs.",
     secondSubtitle: "Compétences obtenues :",
     skillsGained: [
       "• Découverte de Next.js, TypeScript et Tailwind.",
-      "• Apprentissage des composants serveurs et clients, de la mise en cache, les méthodes CRUD.",
+      "• Apprentissage du framework Next.js : composants serveurs/clients, mise en cache, routes statiques et dynamiques, métadonnées, méthodes CRUD.",
     ],
     thirdSubtitle: "Technologies utilisées",
     stack: [SiNextdotjs, SiTypescript, SiTailwindcss],
@@ -53,12 +53,22 @@ export const ProjectsData = [
   },
   {
     id: 3,
-
     title: "CineQwik",
+    subtitle: "Réalisation d'une application de cinéma",
+    description:
+      "Application de cinéma réalisée avec React utilisant l'API TMDB pour offrir une expérience cinématographique immersive. Le but de ce projet était de créer une application permettant aux cinéphiles d'explorer et de découvrir des informations détaillées sur les films, les bandes-annonces et bien plus encore.",
+    secondSubtitle: "Compétences obtenues :",
+    skillsGained: [
+      "• Maitrise de la manipulation de données en utilisant React et l'intégration d'API externes.",
+      "• Intégration de bibliothèques tierces telles que Swiper et React-YouTube pour améliorer l'expérience utilisateur et ajouter des fonctionnalités interactives à l'application.",
+    ],
+    thirdSubtitle: "Technologies utilisées",
     stack: [SiReact, SiReactrouter, SiAxios],
     link: "/project/3",
     cover: "/assets/projects/project03.png",
     background: "bg-green-500",
+    githubLink: "https://github.com/Yoni-Deserbaix/CineQuik",
+    demo: "https://yoni-deserbaix.github.io/CineQuik/",
   },
   {
     id: 4,
