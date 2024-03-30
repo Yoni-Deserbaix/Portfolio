@@ -10,20 +10,20 @@ export default function Footer() {
           Yoni Deserbaix 🦇
         </div>
         <div className="mt-3 gap-4 flex items-center justify-center  ">
-          <Link
+          <a
             href="https://www.linkedin.com/in/yoni-deserbaix/"
             target="_blank"
             aria-label="Navigate to the LinkedIn account"
           >
             <Linkedin size={20} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://github.com/Yoni-Deserbaix"
             target="_blank"
             aria-label="Navigate to the Github account"
           >
             <Github size={20} />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
