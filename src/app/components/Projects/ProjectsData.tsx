@@ -7,7 +7,6 @@ import {
   SiNextdotjs,
   SiReact,
   SiReactrouter,
-  SiSass,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -22,7 +21,8 @@ export const ProjectsData = [
     secondSubtitle: "Compétences obtenues :",
     skillsGained: [
       "• Réalisation de maquettes Figma.",
-      "• Utilisation de composants réutilisables pour le style.",
+      "• Utilisation de composants réutilisables pour le style",
+      "• Maîtrise de Tailwind CSS, ainsi de que de librairies telles que Shadcn/UI et Aceternity/UI pour améliorer l'expérience utilisateur.",
     ],
     thirdSubtitle: "Technologies utilisées",
     stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiFigma],
@@ -59,7 +59,7 @@ export const ProjectsData = [
       "Application de cinéma réalisée avec React utilisant l'API TMDB pour offrir une expérience cinématographique immersive. Le but de ce projet était de créer une application permettant aux cinéphiles d'explorer et de découvrir des informations détaillées sur les films, les bandes-annonces et bien plus encore.",
     secondSubtitle: "Compétences obtenues :",
     skillsGained: [
-      "• Maitrise de la manipulation de données en utilisant React et l'intégration d'API externes.",
+      "• Maîtrise de la manipulation de données en utilisant React et l'intégration d'API externes.",
       "• Intégration de bibliothèques tierces telles que Swiper et React-YouTube pour améliorer l'expérience utilisateur et ajouter des fonctionnalités interactives à l'application.",
     ],
     thirdSubtitle: "Technologies utilisées",
@@ -72,11 +72,21 @@ export const ProjectsData = [
   },
   {
     id: 4,
-
     title: "GTA VI Landing Page",
-    stack: [SiHtml5, SiSass, SiJavascript],
+    subtitle: "Création d'une landing page exclusive pour le jeu-vidéo GTA VI.",
+    description:
+      "Le but de ce projet était de créer la toute première landing page web dédié au jeu-vidéo Grand Theft Auto VI, avec l'espoir d'apporter quelque chose de spécial aux fans qui attendent avec impatience le jeu depuis des années.",
+    secondSubtitle: "Compétences obtenues :",
+    skillsGained: [
+      "• Réalisation de sites vitrines à partir d'exemples sur web et de plateformes comme Dribbble.",
+      "• Maîtrise de flexbox et grid en CSS et intégration d'animations au scroll.",
+    ],
+    thirdSubtitle: "Technologies utilisées",
+    stack: [SiHtml5, SiCss3, SiJavascript],
     link: "/project/4",
     cover: "/assets/projects/project04.png",
     background: "bg-indigo-500",
+    githubLink: "https://github.com/Yoni-Deserbaix/GTA-VI-Landing-Page",
+    demo: "https://yoni-deserbaix.github.io/GTA-VI-Landing-Page/",
   },
 ];
