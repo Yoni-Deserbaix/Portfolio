@@ -16,7 +16,16 @@ export const ProjectsData = [
   {
     id: 1,
     title: "Portfolio",
+    subtitle: "Réalisation de mon portfolio",
+    description:
+      "Mon portfolio personnel optimisé et réalisé en Next.js. Ce projet m'a permis de m'entraîner et perfectionner mes compétences en frontend. Il reflète mes compétences, mes réalisations, offrant aux visiteurs un aperçu authentique de mon travail ainsi que de mon style.",
     stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiFigma],
+    secondSubtitle: "Compétences obtenues :",
+    skillsGained: [
+      "• Réalisation de maquettes Figma.",
+      "• Utilisation de composants réutilisables pour le style.",
+    ],
+    thirdSubtitle: "Technologies utilisées",
     link: "/project/1",
     cover: "/assets/projects/project01.png",
     background: "bg-indigo-500",
