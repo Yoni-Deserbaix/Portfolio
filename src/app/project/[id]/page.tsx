@@ -46,16 +46,22 @@ export default function Home({ params }: ProjectType) {
           })}
         </div>
         <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Title
               text="Code 🚀"
               className="flex flex-col mt-12 items-start justify-center text-3xl "
             />
           </a>
-          <Title
-            text="Demo ✨"
-            className="flex flex-col mt-12 items-start justify-center text-3xl "
-          />
+          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+            <Title
+              text="Demo ✨"
+              className="flex flex-col mt-12 items-start justify-center text-3xl "
+            />
+          </a>
         </div>
       </div>
     </div>
