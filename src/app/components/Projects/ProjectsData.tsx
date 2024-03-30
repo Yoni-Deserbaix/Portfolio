@@ -29,6 +29,8 @@ export const ProjectsData = [
     link: "/project/1",
     cover: "/assets/projects/project01.png",
     background: "bg-indigo-500",
+    githubLink: "https://github.com/Yoni-Deserbaix/portfolio-v3",
+    demo:"",
   },
   {
     id: 2,
