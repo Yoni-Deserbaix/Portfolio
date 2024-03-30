@@ -89,16 +89,6 @@ export default function Header() {
             Contact
           </a>
         </li>
-        <li className=" hover:scale-110 transition duration-200">
-          <a
-            className="navbar__a text-lg font-bold py-[7px] max-lg:text-xl"
-            onClick={() => {
-              window.open("/assets/DESERBAIX_Yoni_CV_ENI.pdf", "_blank");
-            }}
-          >
-            CV
-          </a>
-        </li>
       </ul>
     </nav>
   );
