@@ -8,45 +8,48 @@ export default function Hero() {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between">
       <div className="space-y-10 text-center lg:text-left">
-        <h1 className="text-4xl lg:text-5xl font-bold  pt-8 max-sm:text-[1.7rem]">
+        <h1 className="text-4xl lg:text-5xl font-bold  pt-20 max-lg:pt-0 max-sm:text-[1.7rem]">
           Salut! 👋 <br /> Je suis{" "}
           <span className="underline underline-offset-8 decoration-green-500">
-            Yoni Deserbaix.
+            {"Yoni Deserbaix."}
           </span>
         </h1>
         <p className="md:w-96 text-lg text-gray-300 max-sm:text-base">
-          Basé à Nantes, je suis un développeur Frontend passionné par la
-          construction d'applications web modernes que les utilisateurs adorent.
+          {
+            "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent."
+          }
         </p>
         <div>
           <h1 className="text-3xl font-bold hover:text-green-400 transition-all max-sm:text-2xl">
-            Me contacter 📪
-            <div className="w-40 h-3 bg-green-500 rounded-full"></div>
-            <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
+            <div className="inline-block">
+              Me contacter 📪
+              <div className="w-40 h-3 bg-green-500 rounded-full"></div>
+              <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
+            </div>
           </h1>
           <div className="flex p-6 gap-5 max-lg:justify-center">
-            <Link
+            <a
               href="https://www.linkedin.com/in/yoni-deserbaix/"
               target="_blank"
               aria-label="Navigate to the LinkedIn account"
-              className="hover:scale-110 transition-all"
+              className="hover:scale-110 transition-all z-10"
             >
               <Linkedin />
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://github.com/Yoni-Deserbaix"
               target="_blank"
               aria-label="Navigate to the Github account"
-              className="hover:scale-110 transition-all"
+              className="hover:scale-110 transition-all z-10"
             >
               <Github />
-            </Link>
-            <Link
+            </a>
+            <a
               href="mailto:yonideserbaix@gmail.com"
-              className="hover:scale-110 transition-all"
+              className="hover:scale-110 transition-all z-10"
             >
               <Mail />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -66,6 +69,7 @@ export default function Hero() {
         <div className="absolute bottom-5 lg:bottom-14 left-3">
           <ResumeBtn />
         </div>
+        <div className="flex flex-row items-center justify-center mb-10 w-full"></div>
       </div>
     </div>
   );
