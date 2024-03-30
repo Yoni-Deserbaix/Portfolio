@@ -64,7 +64,7 @@ export default function Home({ params }: ProjectType) {
             />
           </a>
         </div>
-        <div className="grid grid-cols-1 pt-20 gap-5 w-1/2">
+        <div className="grid grid-cols-1 pt-20 gap-5 w-1/2 max-sm:w-full">
           {project.cover.map((imageCover: string, index: number) => (
             <div
               key={index}
