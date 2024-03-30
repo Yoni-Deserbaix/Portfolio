@@ -1,7 +1,8 @@
 import Footer from "@/app/components/Footer";
-import Header from "@/app/components/Header";
 import { ProjectsData } from "@/app/components/Projects/ProjectsData";
+import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IconType } from "react-icons";
 
@@ -62,6 +63,21 @@ export default function Home({ params }: ProjectType) {
               className="flex flex-col mt-12 items-start justify-center text-3xl "
             />
           </a>
+        </div>
+        <div className="grid grid-cols-1 pt-20 gap-5 w-1/2">
+          {project.cover.map((imageCover: string, index: number) => (
+            <div
+              key={index}
+              className={cn("p-1 rounded-lg", project.background)}
+            >
+              <DirectionAwareHover
+                imageUrl={imageCover}
+                className="w-full space-y-5 cursor-pointer"
+              >
+                {""}
+              </DirectionAwareHover>
+            </div>
+          ))}
         </div>
       </div>
     </div>
