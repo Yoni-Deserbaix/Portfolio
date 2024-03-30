@@ -45,16 +45,16 @@ export default function Home({ params }: ProjectType) {
             return <Icon className="w-8 h-8" key={index} />;
           })}
         </div>
-        <div className="flex gap-20">
+        <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <Title
               text="Code 🚀"
-              className="flex flex-col mt-12 items-start justify-center text-3xl"
+              className="flex flex-col mt-12 items-start justify-center text-3xl "
             />
           </a>
           <Title
             text="Demo ✨"
-            className="flex flex-col mt-12 items-start justify-center text-3xl"
+            className="flex flex-col mt-12 items-start justify-center text-3xl "
           />
         </div>
       </div>
