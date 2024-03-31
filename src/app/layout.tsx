@@ -9,9 +9,7 @@ export const metadata: Metadata = {
   title: "Yoni - Développeur Frontend",
   description: "Yoni - Développeur Frontend",
   icons: {
-    icon: [
-      "https://raw.githubusercontent.com/Yoni-Deserbaix/portfolio-v2/main/src/app/assets/memoji-favicon.png",
-    ],
+    icon: "/favicon.svg",
   },
 };
 
