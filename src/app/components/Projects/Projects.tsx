@@ -10,7 +10,7 @@ export default function Projects() {
     <div className="py-10 p-5 sm:p-0" id="projects">
       <Title
         text="Projects 🎨"
-        className="flex flex-col mt-28 items-center justify-center text-3xl rotate-6"
+        className="flex flex-col mt-28 max-lg:mt-0 items-center justify-center text-3xl rotate-6"
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
