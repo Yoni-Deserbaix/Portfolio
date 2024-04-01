@@ -35,13 +35,13 @@ export default function Home({ params }: ProjectType) {
             <p className="md:w-96 text-md text-gray-300 max-sm:text-base">
               {project.description}
             </p>
-            <div className="text-xl font-bold">{project.secondSubtitle}</div>
+            <div className="text-xl font-bold">Compétences obtenues :</div>
             <ul className="md:w-96 text-md text-gray-300 max-sm:text-base">
               {project.skillsGained.map((skill: string, index: number) => (
                 <li key={index}>{skill}</li>
               ))}
             </ul>
-            <div className="text-xl font-bold">{project.thirdSubtitle}</div>
+            <div className="text-xl font-bold">Technologies utilisées :</div>
             <div className="flex gap-5 ml-2">
               {project.stack.map((Icon: IconType, index: number) => {
                 return <Icon className="w-8 h-8" key={index} />;
