@@ -22,7 +22,7 @@ export default function Home({ params }: ProjectType) {
   return (
     <div className="max-w-7xl mx-auto max-xl:px-8">
       <div className="max-w-7xl mx-auto max-xl:px-8 flex flex-wrap">
-        <div className="w-2/3 max-md:w-full ">
+        <div className="w-2/3 max-md:w-full animate-move-up">
           <div className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 pt-5">
             <Link href="/">Yoni Deserbaix 🦇</Link>
           </div>
@@ -67,7 +67,7 @@ export default function Home({ params }: ProjectType) {
             </div>
           </div>
         </div>
-        <div className="w-1/3 max-md:w-full">
+        <div className="w-1/3 max-md:w-full animate-move-down">
           <div className="grid grid-cols-1 pt-12 md:pt-40 gap-5 w-full">
             {project.cover.map((imageCover: string, index: number) => (
               <div

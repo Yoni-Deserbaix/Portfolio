@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="z-[1] py-6 flex items-center justify-between ">
+    <nav className="z-[1] py-6 flex items-center justify-between animate-move-down">
       <a
         href="#home"
         className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2"

@@ -6,7 +6,7 @@ import ResumeBtn from "@/components/ui/ResumeBtn";
 
 export default function Hero() {
   return (
-    <section id="home">
+    <section id="home" className="animate-move-up">
       <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between">
         <div className="space-y-10 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-bold  pt-20 max-lg:pt-0 max-sm:text-[1.7rem]">
