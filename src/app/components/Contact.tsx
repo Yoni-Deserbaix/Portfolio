@@ -20,7 +20,7 @@ export default function Contact() {
 
         <div className="flex justify-evenly max-lg:flex-col max-lg:gap-4 mt-14 max-xl:pl-16 max-sm:pl-8">
           <div className="flex items-center gap-4">
-            <span className="p-4 rounded-[50%] hover:scale-110 transition-all">
+            <span className="p-4 rounded-[50%] hover:scale-125 transition-all">
               <i className="bx bxs-map text-2xl"></i>
             </span>
             <div>
@@ -31,10 +31,10 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <span className=" p-4 rounded-[50%] hover:scale-110 transition-all">
+            <span className=" p-4 rounded-[50%] hover:scale-125 transition-all">
               <i className="bx bx-envelope text-2xl"></i>
             </span>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
               <span className="font-bold text-xl  max-sm:text-lg">Mail</span>
               <a
                 href="mailto:yonideserbaix@gmail.com"
