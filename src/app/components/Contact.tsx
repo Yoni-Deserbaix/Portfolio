@@ -19,21 +19,23 @@ export default function Contact() {
         </div>
 
         <div className="flex justify-evenly max-lg:flex-col max-lg:gap-4 mt-14 max-xl:pl-16 max-sm:pl-8">
-          <div className="contact-container flex items-center gap-4">
+          <div className="flex items-center gap-4">
             <span className="p-4 rounded-[50%] hover:scale-110 transition-all">
               <i className="bx bxs-map text-2xl"></i>
             </span>
-            <div className="contact-box">
-              <h3 className="font-bold text-xl max-sm:text-lg">Lieu</h3>
-              <p className="text-lg max-sm:text-sm text-gray-300">Nantes, France</p>
+            <div>
+              <span className="font-bold text-xl max-sm:text-lg">Lieu</span>
+              <p className="text-lg max-sm:text-sm text-gray-300">
+                Nantes, France
+              </p>
             </div>
           </div>
-          <div className="contact-container flex items-center gap-4">
+          <div className="flex items-center gap-4">
             <span className=" p-4 rounded-[50%] hover:scale-110 transition-all">
               <i className="bx bx-envelope text-2xl"></i>
             </span>
             <div className="flex flex-col gap-2">
-              <h3 className="font-bold text-xl  max-sm:text-lg">Mail</h3>
+              <span className="font-bold text-xl  max-sm:text-lg">Mail</span>
               <a
                 href="mailto:yonideserbaix@gmail.com"
                 rel="noreferrer"

@@ -40,7 +40,7 @@ export default function Header() {
       />
       <label
         htmlFor="check"
-        className="navbar__burger__menu hidden text-[30px]  cursor-pointer max-lg:block"
+        className="hidden text-[30px]  cursor-pointer max-lg:block"
       >
         <i
           className="bx bx-menu text-center rounded hover:bg-black "
@@ -54,7 +54,7 @@ export default function Header() {
       >
         <li className="hover:scale-110 transition duration-200  max-lg:block">
           <a
-            className="navbar__a text-lg font-bold  py-[7px] max-lg:text-xl"
+            className=" text-lg font-bold  py-[7px] max-lg:text-xl"
             href="#home"
             onClick={handleClick}
           >
@@ -62,27 +62,27 @@ export default function Header() {
           </a>
         </li>
 
-        <li className=" hover:scale-110 transition duration-200">
+        <li className="hover:scale-110 transition duration-200">
           <a
-            className="navbar__a text-lg font-bold py-[7px] max-lg:text-xl"
+            className=" text-lg font-bold py-[7px] max-lg:text-xl"
             href="#skills"
             onClick={handleClick}
           >
             Skills
           </a>
         </li>
-        <li className=" hover:scale-110 transition duration-200">
+        <li className="hover:scale-110 transition duration-200">
           <a
-            className="navbar__a text-lg font-bold py-[7px] max-lg:text-xl"
+            className=" text-lg font-bold py-[7px] max-lg:text-xl"
             href="#projects"
             onClick={handleClick}
           >
             Projets
           </a>
         </li>
-        <li className=" hover:scale-110 transition duration-200">
+        <li className="hover:scale-110 transition duration-200">
           <a
-            className="navbar__a text-lg font-bold py-[7px] max-lg:text-xl"
+            className=" text-lg font-bold py-[7px] max-lg:text-xl"
             href="#contact"
             onClick={handleClick}
           >
