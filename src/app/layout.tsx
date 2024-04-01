@@ -15,6 +15,9 @@ export const metadata: Metadata = {
 
   description:
     "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent.",
+  icons: {
+    icon: ["/assets/memoji-favicon.png"],
+  },
   openGraph: {
     title: "Yoni Deserbaix - Développeur Frontend",
     description:
