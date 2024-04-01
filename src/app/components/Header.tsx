@@ -1,95 +1,44 @@
-"use client";
-import { useState } from "react";
-
-type NavbarType = {
-  left: string;
-  transition: string;
-};
+import React from "react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { Mail } from "lucide-react";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
-  const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
-
-  const handleClick = () => {
-    setNavbarOpen((current) => !current);
-  };
-
-  const openNavbar: NavbarType = {
-    left: "0",
-    transition: "all 0.5s",
-  };
-
-  const closeNavbar: NavbarType = {
-    left: "-100%",
-    transition: "all 0.5s",
-  };
-
   return (
-    <nav className="z-[1] py-6 flex items-center justify-between animate-move-down">
-      <a
-        href="#home"
-        className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2"
-      >
+    <nav
+      className={cn(
+        "py-10 flex justify-between items-center animate-move-down"
+      )}
+    >
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2">
         Yoni Deserbaix 🦇
-      </a>
-
-      <input
-        type="checkbox"
-        id="check"
-        className="hidden"
-        onChange={handleClick}
-      />
-      <label
-        htmlFor="check"
-        className="hidden text-[30px]  cursor-pointer max-lg:block"
-      >
-        <i
-          className="bx bx-menu text-center rounded hover:bg-black "
-          id="burger__icon"
-        ></i>
-      </label>
-
-      <ul
-        className="flex gap-10  max-lg:fixed max-lg:w-full max-lg:h-[100vh] max-lg:bg-black max-lg:top-20 max-lg:text-center max-lg:flex max-lg:flex-col max-lg:pt-10 z-20"
-        style={isNavbarOpen ? openNavbar : closeNavbar}
-      >
-        <li className="hover:scale-110 transition duration-200  max-lg:block">
-          <a
-            className=" text-lg font-bold  py-[7px] max-lg:text-xl"
-            href="#home"
-            onClick={handleClick}
-          >
-            Accueil
-          </a>
-        </li>
-
-        <li className="hover:scale-110 transition duration-200">
-          <a
-            className=" text-lg font-bold py-[7px] max-lg:text-xl"
-            href="#skills"
-            onClick={handleClick}
-          >
-            Skills
-          </a>
-        </li>
-        <li className="hover:scale-110 transition duration-200">
-          <a
-            className=" text-lg font-bold py-[7px] max-lg:text-xl"
-            href="#projects"
-            onClick={handleClick}
-          >
-            Projets
-          </a>
-        </li>
-        <li className="hover:scale-110 transition duration-200">
-          <a
-            className=" text-lg font-bold py-[7px] max-lg:text-xl"
-            href="#contact"
-            onClick={handleClick}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
+      </h1>
+      <div className="flex items-center gap-5 max-sm:gap-3">
+        <Link
+          href="https://www.linkedin.com/in/yoni-deserbaix/"
+          target="_blank"
+          aria-label="Navigate to the LinkedIn account"
+          className="w-5 h-5 text-xl hover:scale-125 transition-all"
+        >
+          <SiLinkedin />
+        </Link>
+        <Link
+          href="https://github.com/Yoni-Deserbaix"
+          target="_blank"
+          aria-label="Navigate to the Github account"
+          className="w-5 h-5 text-xl hover:scale-125 transition-all"
+        >
+          <SiGithub />
+        </Link>
+        <Link
+          href="mailto:yonideserbaix@gmail.com"
+          className="hover:scale-110 transition-all z-10"
+          aria-label="Email me at yonideserbaix@gmail.com"
+        >
+          <Mail />
+        </Link>
+      </div>
     </nav>
   );
 }
