@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="border-t mt-10">
       <div className="m-10 text-center text-lg">
-        <div className="font-bold underline underline-offset-8 decoration-green-500 rotate-2 hover:text-green-400 transition-all">
+        <div className="font-bold underline underline-offset-8 decoration-green-500 rotate-2">
           Yoni Deserbaix 🦇
         </div>
         <div className="mt-3 gap-4 flex items-center justify-center  ">

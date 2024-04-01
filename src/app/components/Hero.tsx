@@ -28,31 +28,6 @@ export default function Hero() {
                 <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
               </div>
             </h1>
-            <div className="flex p-6 gap-5 max-lg:justify-center">
-              <a
-                href="https://www.linkedin.com/in/yoni-deserbaix/"
-                target="_blank"
-                aria-label="Navigate to the LinkedIn account"
-                className="hover:scale-110 transition-all z-10"
-              >
-                <Linkedin />
-              </a>
-              <a
-                href="https://github.com/Yoni-Deserbaix"
-                target="_blank"
-                aria-label="Navigate to the Github account"
-                className="hover:scale-110 transition-all z-10"
-              >
-                <Github />
-              </a>
-              <a
-                href="mailto:yonideserbaix@gmail.com"
-                className="hover:scale-110 transition-all z-10"
-                aria-label="Email me at yonideserbaix@gmail.com"
-              >
-                <Mail />
-              </a>
-            </div>
           </div>
         </div>
         <div className="relative max-lg:pt-16">
