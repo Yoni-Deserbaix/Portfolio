@@ -12,9 +12,16 @@ export default function Header({ className }: { className?: string }) {
         className
       )}
     >
-      <h1 className={cn("text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2", className)}>
-        Yoni Deserbaix 🦇
-      </h1>
+      <Link href="/">
+        <h1
+          className={cn(
+            "text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2",
+            className
+          )}
+        >
+          Yoni Deserbaix 🦇
+        </h1>
+      </Link>
       <div className="flex items-center gap-5 max-sm:gap-3">
         <Link
           href="https://www.linkedin.com/in/yoni-deserbaix/"
