@@ -11,7 +11,7 @@ export default function Home() {
       className="bg-black mx-auto overflow-hidden 
         "
     >
-      <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] relative">
+      <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] z-10">
         <div className="max-w-7xl mx-auto max-xl:px-8">
           <Header />
           <Hero />

@@ -1,15 +1,14 @@
 import React from "react";
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
 import ResumeBtn from "@/components/ui/ResumeBtn";
 
 export default function Hero() {
   return (
-    <section id="home" className="animate-move-up">
+    <section className="animate-move-up">
       <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between">
         <div className="space-y-10 text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-bold  pt-20 max-lg:pt-0 max-sm:text-[1.7rem]">
+          <h1 className="text-4xl lg:text-5xl font-bold  pt max-lg:pt-0 max-sm:text-[1.7rem]">
             Salut! 👋 <br /> Je suis{" "}
             <span className="underline underline-offset-8 decoration-green-500">
               {"Yoni Deserbaix."}
@@ -22,11 +21,13 @@ export default function Hero() {
           </p>
           <div>
             <h1 className="text-3xl font-bold hover:text-green-400 transition-all max-sm:text-2xl">
-              <div className="inline-block">
-                Me contacter 📪
-                <div className="w-40 h-3 bg-green-500 rounded-full"></div>
-                <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
-              </div>
+              <Link href="mailto:yonideserbaix@gmail.com">
+                <div className="inline-block">
+                  Me contacter 📪
+                  <div className="w-40 h-3 bg-green-500 rounded-full"></div>
+                  <div className="w-40 h-3 bg-indigo-500 rounded-full translate-x-2"></div>
+                </div>
+              </Link>
             </h1>
           </div>
         </div>
