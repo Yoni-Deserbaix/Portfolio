@@ -1,4 +1,5 @@
 import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 import { ProjectsData } from "@/app/components/Projects/ProjectsData";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
@@ -21,14 +22,12 @@ export default function Home({ params }: ProjectType) {
   );
   return (
     <div className="max-w-7xl mx-auto max-xl:px-8">
+      <Header />
       <div className="max-w-7xl mx-auto max-xl:px-8 flex flex-wrap">
         <div className="w-2/3 max-md:w-full animate-move-up">
-          <div className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 pt-5">
-            <Link href="/">Yoni Deserbaix 🦇</Link>
-          </div>
           <Title
             text={project.title}
-            className="flex flex-col mt-28 items-start justify-center text-3xl"
+            className="flex flex-col mt-12 items-start justify-center text-3xl"
           />
           <div className="space-y-6">
             <div className="text-xl font-bold pt-12">{project.subtitle}</div>
@@ -68,7 +67,7 @@ export default function Home({ params }: ProjectType) {
           </div>
         </div>
         <div className="w-1/3 max-md:w-full animate-move-down">
-          <div className="grid grid-cols-1 pt-12 md:pt-40 gap-5 w-full">
+          <div className="grid grid-cols-1 pt-12 gap-5 w-full">
             {project.cover.map((imageCover: string, index: number) => (
               <div
                 key={index}
