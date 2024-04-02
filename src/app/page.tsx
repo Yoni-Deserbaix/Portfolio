@@ -16,7 +16,7 @@ export default function Home() {
           <Header />
           <Hero />
         </div>
-        <div className="h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full"></div>
+        <div className="h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full max-sm:h-0"></div>
       </div>
       <div className="max-w-6xl mx-auto p-5 pt-20">
         <Skills />
