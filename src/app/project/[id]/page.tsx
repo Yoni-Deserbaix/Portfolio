@@ -51,7 +51,7 @@ export default function Home({ params }: ProjectType) {
             </div>
             <div className="flex gap-5 ml-2">
               {project.stack.map((Icon: IconType, index: number) => {
-                return <Icon className="w-8 h-8" key={index} />;
+                return <Icon className="w-8 h-8 hover:scale-125 transition-all" key={index} />;
               })}
             </div>
             <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
