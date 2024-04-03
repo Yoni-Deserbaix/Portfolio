@@ -62,13 +62,13 @@ export default function Home({ params }: ProjectType) {
               >
                 <Title
                   text="Code 🚀"
-                  className="flex flex-col mt-12 items-start justify-center text-3xl "
+                  className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
                 />
               </a>
               <a href={project.demo} target="_blank" rel="noopener noreferrer">
                 <Title
                   text="Demo ✨"
-                  className="flex flex-col mt-12 items-start justify-center text-3xl "
+                  className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
                 />
               </a>
             </div>
