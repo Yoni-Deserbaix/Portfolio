@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   authors: {
     name: "Yoni Deserbaix",
   },
-
   description:
     "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent.",
   icons: {
     icon: ["/assets/memoji-favicon.png"],
   },
+
   openGraph: {
     title: "Yoni Deserbaix - Développeur Frontend",
     description:
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: "/assets/projects/project01.png",
     type: "website",
   },
-  keywords: ["Portfolio", "Yoni Deserbaix", "Développeur Frontend"],
+  keywords: ["Portfolio", "Yoni Deserbaix", "Développeur Frontend", "JavaScript", "TypeScript"],
 };
 
 export default function RootLayout({
