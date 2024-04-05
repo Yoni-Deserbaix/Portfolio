@@ -1,3 +1,7 @@
+## 🚀 My portfolio 🚀 
+
+![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01.png)
+
 ## Tools used 🔪
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
@@ -5,9 +9,10 @@
 - [Shadcn/UI](https://ui.shadcn.com/)
 - [Aceternity UI](https://ui.aceternity.com/)
 
-## Based on my own figma modal 🎨
+## Inspirations 💭 
+I drew inspiration from  https://www.chensokheng.com/ and enhanced it with my own design. Check out my Figma design for more details!
 
-[Figma design](https://www.figma.com/file/i5Fu7yKCNsgWrE3YzDz20S/Yoni-Deserbaix-Portfolio-%F0%9F%9A%80?type=design&node-id=0%3A1&mode=design&t=KxwC6EDNLCwIx7LF-1)
+🎨 [My Figma design](https://www.figma.com/file/i5Fu7yKCNsgWrE3YzDz20S/Yoni-Deserbaix-Portfolio-%F0%9F%9A%80?type=design&node-id=0%3A1&mode=design&t=KxwC6EDNLCwIx7LF-1)
 
 
 ## Getting Started
