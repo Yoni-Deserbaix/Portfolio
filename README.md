@@ -1,5 +1,5 @@
+# 🚀 My portfolio 🚀 
 
-## 🚀 My portfolio 🚀 
 My personal portfolio, optimized and built with Next.js. This project has allowed me to practice and enhance my frontend skills. It showcases my abilities, achievements, providing visitors with an authentic overview of my work and style.
 
 ## View project 👀 
