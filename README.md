@@ -4,6 +4,8 @@ My personal portfolio, optimized and built with Next.js. This project has allowe
 
 ## View project 👀 
 
+Check out the project online 👉 [here](https://yoni-deserbaix-potfolio.vercel.app/)
+
 ## Screenshots 📸 
 ![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01.png)
 ![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01-2.png)
