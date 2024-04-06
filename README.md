@@ -1,14 +1,37 @@
-## Tools used 🔪
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/docs/)
-- [Tailwind](https://tailwindcss.com/)
+# 🚀 My portfolio 🚀 
+
+My personal portfolio, optimized and built with Next.js. This project has allowed me to practice and enhance my frontend skills. It showcases my abilities, achievements, providing visitors with an authentic overview of my work and style.
+
+## View project 👀 
+
+Check out the project online 👉 [here](https://yoni-deserbaix-potfolio.vercel.app/)
+
+## Screenshots 📸 
+![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01.png)
+![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01-2.png)
+
+## Technologies used 🔪
+- Next.js  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="15" alt="nextjs logo"  />
+- TypeScript <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="15" alt="typescript logo"  />
+- Tailwind <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="15" alt="tailwindcss logo"  />
 - [Shadcn/UI](https://ui.shadcn.com/)
 - [Aceternity UI](https://ui.aceternity.com/)
 
-## Based on my own figma modal 🎨
 
-[Figma design](https://www.figma.com/file/i5Fu7yKCNsgWrE3YzDz20S/Yoni-Deserbaix-Portfolio-%F0%9F%9A%80?type=design&node-id=0%3A1&mode=design&t=KxwC6EDNLCwIx7LF-1)
+## Inspirations 💭 
+I drew inspiration from  https://www.chensokheng.com/ and enhanced it with my own design. Check out my Figma design for more details!
 
+🎨 [My Figma design](https://www.figma.com/file/i5Fu7yKCNsgWrE3YzDz20S/Yoni-Deserbaix-Portfolio-%F0%9F%9A%80?type=design&node-id=0%3A1&mode=design&t=KxwC6EDNLCwIx7LF-1)
+
+## Skills Gained 🌟
+
+- **Figma Wireframing:** I've learned to create website wireframes using Figma, enabling effective planning for my portfolio's design.
+  
+- **Reusable Component Usage for Styling:** I've implemented reusable components to maintain consistency and ease of maintenance in my code.
+
+- **Proficiency in Tailwind CSS:** I utilized Tailwind CSS to style my portfolio quickly and efficiently, leveraging its utility classes.
+
+- **Utilization of UI Libraries such as Shadcn/UI and Aceternity/UI:** I integrated UI libraries like Shadcn/UI and Aceternity/UI to enhance the user experience of my portfolio, adding ready-to-use features and components.
 
 ## Getting Started
 
