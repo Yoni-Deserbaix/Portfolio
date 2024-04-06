@@ -6,12 +6,41 @@ import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IconType } from "react-icons";
+import { Metadata, ResolvingMetadata } from "next";
 
 type ProjectType = {
   params: {
     id: string;
   };
 };
+
+export function generateMetadata({ params }: ProjectType) {
+  const projectId = params.id;
+  const project: any = ProjectsData.find(
+    (project) => project.id.toString() === projectId
+  );
+
+  const metadata: Metadata = {
+    title: `${project.title} - Yoni Deserbaix `,
+    authors: {
+      name: "Yoni Deserbaix",
+    },
+    description: project.description,
+    metadataBase: new URL(
+      `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`
+    ),
+    alternates: {
+      canonical: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
+    },
+    openGraph: {
+      title: `${project.title} - Yoni Deserbaix `,
+      description: project.description,
+      url: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
+    },
+  };
+
+  return metadata;
+}
 
 export default function Home({ params }: ProjectType) {
   const projectId = params.id;
@@ -20,6 +49,12 @@ export default function Home({ params }: ProjectType) {
   const project: any = ProjectsData.find(
     (project) => project.id.toString() === projectId
   );
+
+  const metadata: Metadata = {
+    title: project.title,
+    description: project.description,
+  };
+
   return (
     <div className="max-w-7xl mx-auto max-xl:px-8">
       <Header />
@@ -51,7 +86,12 @@ export default function Home({ params }: ProjectType) {
             </div>
             <div className="flex gap-5 ml-2">
               {project.stack.map((Icon: IconType, index: number) => {
-                return <Icon className="w-8 h-8 hover:scale-125 transition-all" key={index} />;
+                return (
+                  <Icon
+                    className="w-8 h-8 hover:scale-125 transition-all"
+                    key={index}
+                  />
+                );
               })}
             </div>
             <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
