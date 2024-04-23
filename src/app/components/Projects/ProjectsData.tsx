@@ -42,7 +42,7 @@ export const ProjectsData = [
       "Mon blog, construit avec Next.JS, est une plateforme où je partage mes articles, mes astuces et mes expériences personnelles dans divers domaines. L'utilisation de composants serveurs et clients, ainsi que des routes dynamiques, m'ont permis de créer une expérience de navigation flexible et intuitive pour mes lecteurs.",
     skillsGained: [
       "• Découverte de Next.js, TypeScript et Tailwind.",
-      "• Apprentissage du framework Next.js : composants serveurs/clients, mise en cache, routes statiques et dynamiques, métadonnées, méthodes CRUD.",
+      "• Apprentissage du framework Next.js : composants serveurs/clients, mise en cache, routes statiques et dynamiques, métadonnées.",
     ],
     stack: [SiNextdotjs, SiTypescript, SiTailwindcss],
     link: "/project/2",
