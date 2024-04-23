@@ -1,9 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import Title from "../../../components/ui/Title";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import Title from "../../../components/ui/Title";
 import { ProjectsData } from "./ProjectsData";
 export default function Projects() {
   return (

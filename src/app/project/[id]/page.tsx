@@ -4,9 +4,8 @@ import { ProjectsData } from "@/app/components/Projects/ProjectsData";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Metadata } from "next";
 import { IconType } from "react-icons";
-import { Metadata, ResolvingMetadata } from "next";
 
 type ProjectType = {
   params: {

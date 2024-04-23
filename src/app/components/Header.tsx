@@ -1,8 +1,7 @@
-import React from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { cn } from "@/lib/utils";
 import { Mail } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 export default function Header({ className }: { className?: string }) {
   return (

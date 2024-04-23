@@ -1,7 +1,6 @@
-import React from "react";
+import ResumeBtn from "@/components/ui/ResumeBtn";
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
-import ResumeBtn from "@/components/ui/ResumeBtn";
 
 export default function Hero() {
   return (

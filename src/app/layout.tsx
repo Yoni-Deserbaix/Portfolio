@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "../components/ui/theme-provider";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +27,13 @@ export const metadata: Metadata = {
     images: "/assets/projects/project01.png",
     type: "website",
   },
-  keywords: ["Portfolio", "Yoni Deserbaix", "Développeur Frontend", "JavaScript", "TypeScript"],
+  keywords: [
+    "Portfolio",
+    "Yoni Deserbaix",
+    "Développeur Frontend",
+    "JavaScript",
+    "TypeScript",
+  ],
 };
 
 export default function RootLayout({
