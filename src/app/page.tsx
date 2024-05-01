@@ -1,10 +1,10 @@
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-
 export default function Home() {
   return (
     <div
@@ -21,6 +21,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto p-5 pt-20">
         <Skills />
         <Projects />
+        <About />
         <Contact />
         <Footer />
       </div>
