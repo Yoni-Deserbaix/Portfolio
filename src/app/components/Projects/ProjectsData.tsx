@@ -15,8 +15,8 @@ import {
 export const ProjectsData = [
   {
     id: 5,
-    title: "LEGO e-commerce (en cours..)",
-    subtitle: "Création d'un site fullstack e-commerce LEGO.",
+    title: "LEGO Shop (en cours..)",
+    subtitle: "Création d'un site e-commerce LEGO fullstack.",
     description:
       "Le but de ce projet est de créer un site e-commerce fullstack, comprenant une interface utilisateur réactive et attrayante. On retrouvera un catalogue de produits, un panier d'achat, des produits favoris, un système d'authentification utilisateur, un mode administrateur, ainsi qu'une intégration sécurisée des paiements en ligne. Ce projet offrira également l'opportunité d'acquérir une expérience pratique dans la gestion d'état en React et de combler mes lacunes en backend, notamment en ce qui concerne les bases de données.",
     skillsGained: [
