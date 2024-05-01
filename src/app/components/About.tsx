@@ -20,8 +20,8 @@ export default function About() {
       <div className="min-h-[60vh] flex items-center justify-center">
         <div className="relative">
           <div>
-            <div className="w-full relative">
-              <div className="absolute inset-0 h-full w-full bg-yellow-500 transform scale-[0.80] blur-3xl" />
+            <div className="w-full relative max-sm:w-11/12 m-auto">
+              <div className="absolute inset-0 h-full w-full bg-yellow-500 transform scale-[0.80] blur-3xl max-sm:blur-2xl" />
               <div className="relative shadow-xl bg-[#09090B] border border-gray-800  px-8 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
                 <div className="flex items-center justify-center mb-4 gap-3">
                   {currentStack.map((current, index) => {
@@ -39,16 +39,16 @@ export default function About() {
                   </h1>
                 </div>
                 <div className="flex gap-5">
-                  <p className="font-normal text-base text-slate-500 z-50 w-48">
-                    J'aide les personnes à se lancer dans le développement web GRATUITEMENT
-                    et à devenir LE Chad Coder.
+                  <p className="font-normal text-base text-slate-500 z-50 w-48 max-sm:text-sm">
+                    J'aide les personnes à se lancer dans le développement web
+                    GRATUITEMENT et à devenir LE Chad Coder.
                   </p>
                   <Image
                     src="/assets/chadCoder.png"
                     width={150}
                     height={150}
                     alt=""
-                    className="items-center m-auto rounded-lg z-50"
+                    className="items-center m-auto rounded-lg max-sm:w-32 z-50"
                   ></Image>
                 </div>
                 <div className="p-3"></div>
