@@ -40,7 +40,7 @@ export default function Header({ className }: { className?: string }) {
         </Link>
         <Link
           href="mailto:yonideserbaix@gmail.com"
-          className="hover:scale-110 transition-all z-10"
+          className="hover:scale-125 transition-all z-10"
           aria-label="Email me at yonideserbaix@gmail.com"
         >
           <Mail />
