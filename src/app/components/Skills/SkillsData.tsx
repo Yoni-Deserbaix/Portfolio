@@ -3,8 +3,8 @@ import {
   SiFigma,
   SiGit,
   SiJavascript,
-  SiMysql,
   SiNextdotjs,
+  SiPostgresql,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -36,8 +36,8 @@ export const skillsData = [
     Icon: SiCplusplus,
   },
   {
-    text: "SQL",
-    Icon: SiMysql,
+    text: "PostgreSQL",
+    Icon: SiPostgresql,
   },
   {
     text: "Git",
