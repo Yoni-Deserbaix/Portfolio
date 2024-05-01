@@ -1,17 +1,47 @@
 import {
   SiAxios,
-  SiCss3,
   SiFigma,
-  SiHtml5,
-  SiJavascript,
   SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
   SiReact,
   SiReactrouter,
+  SiRedux,
+  SiStripe,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 
 export const ProjectsData = [
+  {
+    id: 5,
+    title: "LEGO e-commerce (en cours..)",
+    subtitle: "Création d'un site fullstack e-commerce LEGO.",
+    description:
+      "Le but de ce projet est de créer un site e-commerce fullstack, comprenant une interface utilisateur réactive et attrayante. On retrouvera un catalogue de produits, un panier d'achat, des produits favoris, un système d'authentification utilisateur, un mode administrateur, ainsi qu'une intégration sécurisée des paiements en ligne. Ce projet offrira également l'opportunité d'acquérir une expérience pratique dans la gestion d'état en React et de combler mes lacunes en backend, notamment en ce qui concerne les bases de données.",
+    skillsGained: [
+      "• Utilisation de Redux pour la gestion des états. Permettant une organisation efficace et une manipulation fluide des données dans l'application.",
+      "• Apprentissage de l'utilisation de l'ORM Prisma avec PostgreSQL pour l'authentification des utilisateurs, permettant une meilleure compréhension des bases de données relationnelles et de la sécurisation des données.",
+    ],
+    stack: [
+      SiNextdotjs,
+      SiTypescript,
+      SiTailwindcss,
+      SiRedux,
+      SiPrisma,
+      SiPostgresql,
+      SiStripe,
+    ],
+    link: "/project/5",
+    cover: [
+      "/assets/projects/project05.png",
+      "/assets/projects/project05-1.png",
+      "/assets/projects/project05-2.png",
+    ],
+    background: "bg-indigo-500",
+    githubLink: "https://github.com/Yoni-Deserbaix/Lego-e-commerce",
+    demo: "https://lego-ecom.vercel.app/",
+  },
   {
     id: 1,
     title: "Portfolio",
@@ -76,25 +106,25 @@ export const ProjectsData = [
     githubLink: "https://github.com/Yoni-Deserbaix/CineQuik",
     demo: "https://yoni-deserbaix.github.io/CineQuik/",
   },
-  {
-    id: 4,
-    title: "GTA VI Landing Page",
-    subtitle: "Création d'une landing page exclusive pour le jeu-vidéo GTA VI.",
-    description:
-      "Le but de ce projet était de créer la toute première landing page web dédié au jeu-vidéo Grand Theft Auto VI, avec l'espoir d'apporter quelque chose de spécial aux fans qui attendent avec impatience le jeu depuis des années.",
-    skillsGained: [
-      "• Réalisation de sites vitrines à partir d'exemples sur web et de plateformes comme Dribbble.",
-      "• Maîtrise de flexbox et grid en CSS et intégration d'animations au scroll.",
-    ],
-    stack: [SiHtml5, SiCss3, SiJavascript],
-    link: "/project/4",
-    cover: [
-      "/assets/projects/project04.png",
-      "/assets/projects/project04-1.png",
-      "/assets/projects/project04-2.png",
-    ],
-    background: "bg-indigo-500",
-    githubLink: "https://github.com/Yoni-Deserbaix/GTA-VI-Landing-Page",
-    demo: "https://yoni-deserbaix.github.io/GTA-VI-Landing-Page/",
-  },
+  //   {
+  //     id: 4,
+  //     title: "GTA VI Landing Page",
+  //     subtitle: "Création d'une landing page exclusive pour le jeu-vidéo GTA VI.",
+  //     description:
+  //       "Le but de ce projet était de créer la toute première landing page web dédié au jeu-vidéo Grand Theft Auto VI, avec l'espoir d'apporter quelque chose de spécial aux fans qui attendent avec impatience le jeu depuis des années.",
+  //     skillsGained: [
+  //       "• Réalisation de sites vitrines à partir d'exemples sur web et de plateformes comme Dribbble.",
+  //       "• Maîtrise de flexbox et grid en CSS et intégration d'animations au scroll.",
+  //     ],
+  //     stack: [SiHtml5, SiCss3, SiJavascript],
+  //     link: "/project/4",
+  //     cover: [
+  //       "/assets/projects/project04.png",
+  //       "/assets/projects/project04-1.png",
+  //       "/assets/projects/project04-2.png",
+  //     ],
+  //     background: "bg-indigo-500",
+  //     githubLink: "https://github.com/Yoni-Deserbaix/GTA-VI-Landing-Page",
+  //     demo: "https://yoni-deserbaix.github.io/GTA-VI-Landing-Page/",
+  //   },
 ];
