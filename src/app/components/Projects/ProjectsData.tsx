@@ -8,6 +8,7 @@ import {
   SiReactrouter,
   SiRedux,
   SiStripe,
+  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -23,15 +24,7 @@ export const ProjectsData = [
       "• Utilisation de Redux pour la gestion des états. Permettant une organisation efficace et une manipulation fluide des données dans l'application.",
       "• Apprentissage de l'utilisation de l'ORM Prisma avec PostgreSQL pour l'authentification des utilisateurs, permettant une meilleure compréhension des bases de données relationnelles et de la sécurisation des données.",
     ],
-    stack: [
-      SiNextdotjs,
-      SiTypescript,
-      SiTailwindcss,
-      SiRedux,
-      SiPrisma,
-      SiPostgresql,
-      SiStripe,
-    ],
+    stack: [SiNextdotjs, SiRedux, SiPrisma, SiPostgresql, SiStripe],
     link: "/project/5",
     cover: [
       "/assets/projects/project05.png",
@@ -69,12 +62,12 @@ export const ProjectsData = [
     title: "MyBlog",
     subtitle: "Réalisation de mon blog",
     description:
-      "Mon blog, construit avec Next.JS, est une plateforme où je partage mes articles, mes astuces et mes expériences personnelles dans divers domaines. L'utilisation de composants serveurs et clients, ainsi que des routes dynamiques, m'ont permis de créer une expérience de navigation flexible et intuitive pour mes lecteurs.",
+      "Mon blog, construit avec Next.JS et géré par Supabase pour la gestion de la base de données, est une plateforme où je partage mes articles, mes astuces et mes expériences personnelles dans divers domaines. L'utilisation de composants serveurs et clients, ainsi que des routes dynamiques, m'ont permis de créer une expérience de navigation flexible et intuitive pour mes lecteurs.",
     skillsGained: [
-      "• Découverte de Next.js, TypeScript et Tailwind.",
+      "• Découverte de Next.js, TypeScript, Tailwind et Supabase.",
       "• Apprentissage du framework Next.js : composants serveurs/clients, mise en cache, routes statiques et dynamiques, métadonnées.",
     ],
-    stack: [SiNextdotjs, SiTypescript, SiTailwindcss],
+    stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiSupabase],
     link: "/project/2",
     cover: [
       "/assets/projects/project02.png",
