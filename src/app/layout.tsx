@@ -9,20 +9,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://yoni-deserbaix-potfolio.vercel.app/"),
 
-  title: "Yoni Deserbaix - Développeur Frontend",
+  title: "Yoni Deserbaix - Développeur Frontend React & Next.js",
   authors: {
     name: "Yoni Deserbaix",
   },
   description:
-    "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent.",
+    "Basé à Nantes, je suis développeur Frontend React et Next.js passionné par la construction d'interfaces utilisateurs et d'applications web modernes que les utilisateurs adorent.",
   icons: {
     icon: ["/assets/memoji-favicon.png"],
   },
 
   openGraph: {
-    title: "Yoni Deserbaix - Développeur Frontend",
+    title: "Yoni Deserbaix - Développeur Frontend React & Next.js",
     description:
-      "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent.",
+      "Basé à Nantes, je suis développeur Frontend React et Next.js passionné par la construction d'interfaces utilisateurs et d'applications web modernes que les utilisateurs adorent.",
     url: "https://yoni-deserbaix-potfolio.vercel.app/",
     siteName: "Yoni Deserbaix",
     images: "/assets/projects/project01.png",
