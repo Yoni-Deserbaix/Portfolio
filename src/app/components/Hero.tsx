@@ -1,4 +1,4 @@
-import ResumeBtn from "@/components/ui/ResumeBtn";
+import { MovingBorderBtn } from "@/components/ui/moving-border";
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
 
@@ -44,7 +44,14 @@ export default function Hero() {
             <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
           </div>
           <div className="absolute bottom-5 lg:bottom-14 left-3">
-            <ResumeBtn />
+            <MovingBorderBtn
+              borderRadius="0.5rem"
+              className="p-3 font-semibold"
+            >
+              <Link href="/assets/DESERBAIX_Yoni_CV.pdf" target="_blank">
+                📢 Disponible pour une alternance!
+              </Link>
+            </MovingBorderBtn>
           </div>
           <div className="flex flex-row items-center justify-center mb-10 w-full"></div>
         </div>
