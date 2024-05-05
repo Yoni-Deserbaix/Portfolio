@@ -81,7 +81,7 @@ export default function Home({ params }: ProjectType) {
               ))}
             </ul>
             <div className="text-xl font-bold">
-              <h4>Technologies utilisées :</h4>
+              <h4>Stack Technique :</h4>
             </div>
             <div className="flex gap-5 ml-2">
               {project.stack.map((Icon: IconType, index: number) => {

@@ -1,5 +1,6 @@
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import "boxicons/css/boxicons.min.css";
+import { FileDown } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -15,7 +16,7 @@ export default function Hero() {
           </h1>
           <p className="md:w-96 text-lg text-gray-300 max-sm:text-base">
             {
-              "Basé à Nantes, je suis un développeur Frontend passionné par la construction d'applications web modernes que les utilisateurs adorent."
+              "Basé à Nantes, je suis développeur Frontend React et Next.js passionné par la construction d'interfaces utilisateurs et d'applications web modernes que les utilisateurs adorent."
             }
           </p>
           <div>
@@ -43,13 +44,18 @@ export default function Hero() {
 
             <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
           </div>
-          <div className="absolute bottom-5 lg:bottom-14 left-3">
+          <div className="absolute bottom-5 lg:bottom-16 lg:left-10 max-lg:left-12">
             <MovingBorderBtn
               borderRadius="0.5rem"
               className="p-3 font-semibold"
             >
-              <Link href="/assets/DESERBAIX_Yoni_CV.pdf" target="_blank">
-                📢 Disponible pour une alternance!
+              <Link
+                href="/assets/DESERBAIX_Yoni_CV.pdf"
+                target="_blank"
+                className="flex gap-2"
+              >
+                <FileDown size={20} />
+                Télecharger un CV
               </Link>
             </MovingBorderBtn>
           </div>

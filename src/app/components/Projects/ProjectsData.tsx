@@ -15,7 +15,7 @@ import {
 
 export const ProjectsData = [
   {
-    id: 5,
+    id: 1,
     title: "LEGO Shop (en cours..)",
     subtitle: "Création d'un site e-commerce LEGO fullstack.",
     description:
@@ -25,7 +25,7 @@ export const ProjectsData = [
       "• Apprentissage de l'utilisation de l'ORM Prisma avec PostgreSQL pour l'authentification des utilisateurs, permettant une meilleure compréhension des bases de données relationnelles et de la sécurisation des données.",
     ],
     stack: [SiNextdotjs, SiRedux, SiPrisma, SiPostgresql, SiStripe],
-    link: "/project/5",
+    link: "/project/1",
     cover: [
       "/assets/projects/project05.png",
       "/assets/projects/project05-1.png",
@@ -36,7 +36,7 @@ export const ProjectsData = [
     demo: "https://lego-ecom.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Portfolio",
     subtitle: "Réalisation de mon portfolio",
     description:
@@ -47,7 +47,7 @@ export const ProjectsData = [
       "• Maîtrise de Tailwind CSS, ainsi de que de librairies telles que Shadcn/UI et Aceternity/UI pour améliorer l'expérience utilisateur.",
     ],
     stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiFigma],
-    link: "/project/1",
+    link: "/project/2",
     cover: [
       "/assets/projects/project01.png",
       "/assets/projects/project01-1.png",
@@ -58,7 +58,7 @@ export const ProjectsData = [
     demo: "https://yoni-deserbaix-potfolio.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "MyBlog",
     subtitle: "Réalisation de mon blog",
     description:
@@ -68,7 +68,7 @@ export const ProjectsData = [
       "• Apprentissage du framework Next.js : composants serveurs/clients, mise en cache, routes statiques et dynamiques, métadonnées.",
     ],
     stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiSupabase],
-    link: "/project/2",
+    link: "/project/3",
     cover: [
       "/assets/projects/project02.png",
       "/assets/projects/project02-1.png",
@@ -79,7 +79,7 @@ export const ProjectsData = [
     demo: "https://yoni-deserbaix-my-blog.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "CineQwik",
     subtitle: "Réalisation d'une application de cinéma",
     description:
@@ -89,7 +89,7 @@ export const ProjectsData = [
       "• Intégration de bibliothèques tierces telles que Swiper et React-YouTube pour améliorer l'expérience utilisateur et ajouter des fonctionnalités interactives à l'application.",
     ],
     stack: [SiReact, SiReactrouter, SiAxios],
-    link: "/project/3",
+    link: "/project/4",
     cover: [
       "/assets/projects/project03.png",
       "/assets/projects/project03-1.png",
