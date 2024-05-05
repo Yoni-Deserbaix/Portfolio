@@ -50,7 +50,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="/assets/DESERBAIX_Yoni_CV.pdf"
+              href="/DESERBAIX_YONI_CV.pdf"
               target="_blank"
               className="p-4 rounded-[50%] hover:scale-125 transition-all"
             >

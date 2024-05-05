@@ -50,7 +50,7 @@ export default function Hero() {
               className="p-3 font-semibold"
             >
               <Link
-                href="/assets/DESERBAIX_Yoni_CV.pdf"
+                href="/DESERBAIX_YONI_CV.pdf"
                 target="_blank"
                 className="flex gap-2"
               >
