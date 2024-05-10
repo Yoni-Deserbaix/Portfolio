@@ -5,6 +5,7 @@ import { supabase } from "@/app/config/supabase";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 
 type ProjectType = {
   params: {
@@ -12,30 +13,36 @@ type ProjectType = {
   };
 };
 
-// export function generateMetadata({ params }: ProjectType) {
-//   const projectId = params.id;
+// Dunamic Metadata
+export async function generateMetadata({ params }: ProjectType) {
+  const id = params.id;
+  const { data: projectId } = await supabase
+    .from("portfolio")
+    .select()
+    .match({ id })
+    .single();
 
-//   const metadata: Metadata = {
-//     title: `${project.title} - Yoni Deserbaix `,
-//     authors: {
-//       name: "Yoni Deserbaix",
-//     },
-//     description: project.description,
-//     metadataBase: new URL(
-//       `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`
-//     ),
-//     alternates: {
-//       canonical: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
-//     },
-//     openGraph: {
-//       title: `${project.title} - Yoni Deserbaix `,
-//       description: project.description,
-//       url: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
-//     },
-//   };
+  const metadata: Metadata = {
+    title: `${projectId.title} - Yoni Deserbaix `,
+    authors: {
+      name: "Yoni Deserbaix",
+    },
+    description: projectId.description,
+    metadataBase: new URL(
+      `https://yoni-deserbaix-potfolio.vercel.app/project/${projectId.id}`
+    ),
+    alternates: {
+      canonical: `https://yoni-deserbaix-potfolio.vercel.app/project/${projectId.id}`,
+    },
+    openGraph: {
+      title: `${projectId.title} - Yoni Deserbaix `,
+      description: projectId.description,
+      url: `https://yoni-deserbaix-potfolio.vercel.app/project/${projectId.id}`,
+    },
+  };
 
-//   return metadata;
-// }
+  return metadata;
+}
 
 export default async function Home({ params }: ProjectType) {
   const id = params.id;
@@ -47,10 +54,10 @@ export default async function Home({ params }: ProjectType) {
     .match({ id })
     .single();
 
-  // const metadata: Metadata = {
-  //   title: project.title,
-  //   description: project.description,
-  // };
+  const metadata: Metadata = {
+    title: projectId.title,
+    description: projectId.description,
+  };
 
   return (
     <div className="max-w-7xl mx-auto max-xl:px-8">
