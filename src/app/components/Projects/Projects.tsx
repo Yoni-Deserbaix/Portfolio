@@ -22,7 +22,7 @@ export default async function Projects() {
         {projects &&
           projects.map((project, index) => {
             return (
-              <Link href={project.link} key={index}>
+              <Link href={`/project/${project.id}`} key={index}>
                 <div className={cn("p-1 rounded-lg", project.background)}>
                   <DirectionAwareHover
                     imageUrl={project.coverImage.shift()}
