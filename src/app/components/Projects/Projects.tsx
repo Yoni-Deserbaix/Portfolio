@@ -3,13 +3,12 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Title from "../../../components/ui/Title";
-
-export const revalidate = 1;
+import { ProjectsIconsData } from "./ProjectsData";
 
 export default async function Projects() {
   const { data: projects } = await supabase
     .from("portfolio")
-    .select()
+    .select("title, link, background, image1, stack")
     .order("id", { ascending: true });
 
   console.log(projects);
@@ -34,14 +33,11 @@ export default async function Projects() {
                     <div className="space-y-1">
                       <h2 className="text-xl font-bold">{project.title}</h2>
                       <div className="flex items-center gap-5">
-                        {/* {Array.isArray(project.stack) &&
-                          project.stack.map((Icon: any, index: number) => {
-                            const IconComponent = require("react-icons/si" +
-                              Icon).default;
-                            return (
-                              <IconComponent className="w-8 h-8" key={index} />
-                            );
-                          })} */}
+                        {ProjectsIconsData[index].stack.map(
+                          (Icon, iconIndex) => (
+                            <Icon key={iconIndex} className="w-8 h-8" />
+                          )
+                        )}
                       </div>
                     </div>
                   </DirectionAwareHover>
