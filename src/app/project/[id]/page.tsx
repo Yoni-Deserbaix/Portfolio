@@ -1,6 +1,6 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import { ProjectsData } from "@/app/components/Projects/ProjectsData";
+import { ProjectsData } from "@/app/components/Projects/ProjectIcons";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";

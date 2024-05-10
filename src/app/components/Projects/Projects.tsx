@@ -3,7 +3,7 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Title from "../../../components/ui/Title";
-import { ProjectsIconsData } from "./ProjectsData";
+import { ProjectsIcons } from "./ProjectIcons";
 
 export default async function Projects() {
   const { data: projects } = await supabase
@@ -33,11 +33,9 @@ export default async function Projects() {
                     <div className="space-y-1">
                       <h2 className="text-xl font-bold">{project.title}</h2>
                       <div className="flex items-center gap-5">
-                        {ProjectsIconsData[index].stack.map(
-                          (Icon, iconIndex) => (
-                            <Icon key={iconIndex} className="w-8 h-8" />
-                          )
-                        )}
+                        {ProjectsIcons[index].stack.map((Icon, iconIndex) => (
+                          <Icon key={iconIndex} className="w-8 h-8" />
+                        ))}
                       </div>
                     </div>
                   </DirectionAwareHover>

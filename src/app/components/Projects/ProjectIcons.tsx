@@ -13,7 +13,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-export const ProjectsIconsData = [
+export const ProjectsIcons = [
   {
     id: 1,
     stack: [SiNextdotjs, SiRedux, SiPrisma, SiPostgresql, SiStripe],
