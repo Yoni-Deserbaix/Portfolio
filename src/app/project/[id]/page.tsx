@@ -1,58 +1,56 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import { ProjectsData } from "@/app/components/Projects/ProjectIcons";
+import { ProjectsIcons } from "@/app/components/Projects/ProjectIcons";
+import { supabase } from "@/app/config/supabase";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
-import { Metadata } from "next";
-import { IconType } from "react-icons";
 
 type ProjectType = {
   params: {
-    id: string;
+    id: number;
   };
 };
 
-export function generateMetadata({ params }: ProjectType) {
-  const projectId = params.id;
-  const project: any = ProjectsData.find(
-    (project) => project.id.toString() === projectId
-  );
+// export function generateMetadata({ params }: ProjectType) {
+//   const projectId = params.id;
 
-  const metadata: Metadata = {
-    title: `${project.title} - Yoni Deserbaix `,
-    authors: {
-      name: "Yoni Deserbaix",
-    },
-    description: project.description,
-    metadataBase: new URL(
-      `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`
-    ),
-    alternates: {
-      canonical: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
-    },
-    openGraph: {
-      title: `${project.title} - Yoni Deserbaix `,
-      description: project.description,
-      url: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
-    },
-  };
+//   const metadata: Metadata = {
+//     title: `${project.title} - Yoni Deserbaix `,
+//     authors: {
+//       name: "Yoni Deserbaix",
+//     },
+//     description: project.description,
+//     metadataBase: new URL(
+//       `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`
+//     ),
+//     alternates: {
+//       canonical: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
+//     },
+//     openGraph: {
+//       title: `${project.title} - Yoni Deserbaix `,
+//       description: project.description,
+//       url: `https://yoni-deserbaix-potfolio.vercel.app/project/${project.id}`,
+//     },
+//   };
 
-  return metadata;
-}
+//   return metadata;
+// }
 
-export default function Home({ params }: ProjectType) {
-  const projectId = params.id;
+export default async function Home({ params }: ProjectType) {
+  const id = params.id;
 
   // Rechercher le projet correspondant dans les données de projet
-  const project: any = ProjectsData.find(
-    (project) => project.id.toString() === projectId
-  );
+  const { data: projectId } = await supabase
+    .from("portfolio")
+    .select()
+    .match({ id })
+    .single();
 
-  const metadata: Metadata = {
-    title: project.title,
-    description: project.description,
-  };
+  // const metadata: Metadata = {
+  //   title: project.title,
+  //   description: project.description,
+  // };
 
   return (
     <div className="max-w-7xl mx-auto max-xl:px-8">
@@ -61,41 +59,46 @@ export default function Home({ params }: ProjectType) {
         <div className="w-2/3 max-md:w-full animate-move-up">
           <h1>
             <Title
-              text={project.title}
+              text={projectId.title}
               className="flex flex-col mt-12 items-start justify-center text-3xl"
             />
           </h1>
           <div className="space-y-6">
             <div className="text-xl font-bold pt-12">
-              <h2>{project.subtitle}</h2>
+              <h2>{projectId.subtitle}</h2>
             </div>
             <p className="md:w-96 text-md text-gray-300 max-sm:text-base">
-              {project.description}
+              {projectId.description}
             </p>
             <div className="text-xl font-bold">
               <h3>Compétences obtenues :</h3>
             </div>
             <ul className="md:w-96 text-md text-gray-300 max-sm:text-base">
-              {project.skillsGained.map((skill: string, index: number) => (
-                <li key={index}>{skill}</li>
-              ))}
+              {projectId &&
+                projectId.skillsGained &&
+                projectId.skillsGained
+                  .split("\n")
+                  .map((line: string, index: number) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
             </ul>
             <div className="text-xl font-bold">
               <h4>Stack Technique :</h4>
             </div>
             <div className="flex gap-5 ml-2">
-              {project.stack.map((Icon: IconType, index: number) => {
-                return (
-                  <Icon
-                    className="w-8 h-8 hover:scale-125 transition-all"
-                    key={index}
-                  />
-                );
-              })}
+              {ProjectsIcons[id]?.stack.map((Icon, iconIndex) => (
+                <Icon
+                  key={iconIndex}
+                  className="w-8 h-8w-8 h-8 hover:scale-125 transition-all"
+                />
+              ))}
             </div>
             <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
               <a
-                href={project.githubLink}
+                href={projectId.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -104,7 +107,11 @@ export default function Home({ params }: ProjectType) {
                   className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
                 />
               </a>
-              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+              <a
+                href={projectId.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Title
                   text="Demo ✨"
                   className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
@@ -115,19 +122,22 @@ export default function Home({ params }: ProjectType) {
         </div>
         <div className="w-1/3 max-md:w-full animate-move-down">
           <div className="grid grid-cols-1 pt-12 gap-5 w-full">
-            {project.cover.map((imageCover: string, index: number) => (
-              <div
-                key={index}
-                className={cn("p-1 rounded-lg", project.background)}
-              >
-                <DirectionAwareHover
-                  imageUrl={imageCover}
-                  className="w-full space-y-5"
-                >
-                  {""}
-                </DirectionAwareHover>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 pt-12 gap-5 w-full">
+              {projectId.coverImage &&
+                projectId.coverImage.map((image: string, index: number) => (
+                  <div
+                    key={index}
+                    className={cn("p-1 rounded-lg", projectId.background)}
+                  >
+                    <DirectionAwareHover
+                      imageUrl={image}
+                      className="w-full space-y-5"
+                    >
+                      {""}
+                    </DirectionAwareHover>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
       </div>

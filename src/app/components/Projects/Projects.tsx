@@ -8,7 +8,7 @@ import { ProjectsIcons } from "./ProjectIcons";
 export default async function Projects() {
   const { data: projects } = await supabase
     .from("portfolio")
-    .select("title, link, background, image1, stack")
+    .select()
     .order("id", { ascending: true });
 
   console.log(projects);
@@ -27,7 +27,7 @@ export default async function Projects() {
               <Link href={project.link} key={index}>
                 <div className={cn("p-1 rounded-lg", project.background)}>
                   <DirectionAwareHover
-                    imageUrl={project.image1}
+                    imageUrl={project.coverImage.shift()}
                     className="w-full space-y-5 cursor-pointer"
                   >
                     <div className="space-y-1">
