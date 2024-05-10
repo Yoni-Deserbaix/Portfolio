@@ -1,6 +1,5 @@
 import {
   SiAxios,
-  SiFigma,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
@@ -20,7 +19,7 @@ export const ProjectsIcons = [
   },
   {
     id: 2,
-    stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiFigma],
+    stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiSupabase],
   },
   {
     id: 3,

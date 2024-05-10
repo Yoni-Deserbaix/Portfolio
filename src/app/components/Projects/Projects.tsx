@@ -11,8 +11,6 @@ export default async function Projects() {
     .select()
     .order("id", { ascending: true });
 
-  console.log(projects);
-
   return (
     <div className="py-10 p-5 sm:p-0" id="projects">
       <Title

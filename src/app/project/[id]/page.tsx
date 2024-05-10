@@ -96,7 +96,7 @@ export default async function Home({ params }: ProjectType) {
               <h4>Stack Technique :</h4>
             </div>
             <div className="flex gap-5 ml-2">
-              {ProjectsIcons[id]?.stack.map((Icon, iconIndex) => (
+              {ProjectsIcons[id - 1].stack.map((Icon, iconIndex) => (
                 <Icon
                   key={iconIndex}
                   className="w-8 h-8w-8 h-8 hover:scale-125 transition-all"
