@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Basé à Nantes, je suis développeur Frontend React et Next.js passionné par la construction d'interfaces utilisateurs et d'applications web modernes que les utilisateurs adorent.",
     url: "https://yoni-deserbaix-potfolio.vercel.app/",
     siteName: "Yoni Deserbaix",
-    images: "/assets/projects/project01.png",
+    images: "/assets/metadata.png",
     type: "website",
   },
   keywords: [
