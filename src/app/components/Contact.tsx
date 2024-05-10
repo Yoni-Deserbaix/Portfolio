@@ -51,6 +51,7 @@ export default function Contact() {
           <div className="flex items-center gap-4">
             <Link
               href="/DESERBAIX_YONI_CV.pdf"
+              rel="noreferrer"
               target="_blank"
               className="p-4 rounded-[50%] hover:scale-125 transition-all"
             >
