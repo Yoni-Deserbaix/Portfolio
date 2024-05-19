@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { Mail } from "lucide-react";
 import Link from "next/link";
+import { BsTwitterX } from "react-icons/bs";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 export default function Header({ className }: { className?: string }) {
@@ -39,11 +39,12 @@ export default function Header({ className }: { className?: string }) {
           <SiGithub />
         </Link>
         <Link
-          href="mailto:yonideserbaix@gmail.com"
-          className="hover:scale-125 transition-all z-10"
-          aria-label="Email me at yonideserbaix@gmail.com"
+          href="https://x.com/y2_dev"
+          target="_blank"
+          className="w-5 h-5 text-xl hover:scale-125 transition-all"
+          aria-label="Navigate to the X account"
         >
-          <Mail />
+          <BsTwitterX />
         </Link>
       </div>
     </nav>
