@@ -1,11 +1,11 @@
 import {
   SiCplusplus,
-  SiFigma,
   SiGit,
   SiJavascript,
   SiNextdotjs,
   SiPostgresql,
   SiReact,
+  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -40,11 +40,11 @@ export const skillsData = [
     Icon: SiPostgresql,
   },
   {
-    text: "Git",
-    Icon: SiGit,
+    text: "Supabase",
+    Icon: SiSupabase,
   },
   {
-    text: "Figma",
-    Icon: SiFigma,
+    text: "Git",
+    Icon: SiGit,
   },
 ];
