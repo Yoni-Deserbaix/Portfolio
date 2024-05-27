@@ -78,7 +78,7 @@ export default async function Home({ params }: ProjectType) {
               {projectId.description}
             </p>
             <div className="text-xl font-bold">
-              <h3>Compétences obtenues :</h3>
+              {!projectId.description && <h3>Compétences obtenues :</h3>}
             </div>
             <ul className="md:w-96 text-md text-gray-300 max-sm:text-base">
               {projectId &&
@@ -103,28 +103,30 @@ export default async function Home({ params }: ProjectType) {
                 />
               ))}
             </div>
-            <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
-              <a
-                href={projectId.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Title
-                  text="Code 🚀"
-                  className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
-                />
-              </a>
-              <a
-                href={projectId.demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Title
-                  text="Demo ✨"
-                  className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
-                />
-              </a>
-            </div>
+            {projectId.githubLink && projectId.demoLink && (
+              <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
+                <a
+                  href={projectId.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Title
+                    text="Code 🚀"
+                    className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
+                  />
+                </a>
+                <a
+                  href={projectId.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Title
+                    text="Demo ✨"
+                    className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
+                  />
+                </a>
+              </div>
+            )}
           </div>
         </div>
         <div className="w-1/3 max-md:w-full animate-move-down">
