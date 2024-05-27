@@ -13,6 +13,8 @@ type ProjectType = {
   };
 };
 
+export const revalidate = 10;
+
 // Dunamic Metadata
 export async function generateMetadata({ params }: ProjectType) {
   const id = params.id;

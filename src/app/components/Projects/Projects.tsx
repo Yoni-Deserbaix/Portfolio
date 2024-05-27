@@ -5,6 +5,8 @@ import Link from "next/link";
 import Title from "../../../components/ui/Title";
 import { ProjectsIcons } from "./ProjectIcons";
 
+export const revalidate = 10;
+
 export default async function Projects() {
   const { data: projects } = await supabase
     .from("portfolio")
