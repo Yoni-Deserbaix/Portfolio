@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yoni-deserbaix-potfolio.vercel.app/"),
+  metadataBase: new URL("https://yoni-deserbaix-portfolio.vercel.app/"),
 
   title: "Yoni Deserbaix - Développeur Frontend React & Next.js",
   authors: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Yoni Deserbaix - Développeur Frontend React & Next.js",
     description:
       "Basé à Nantes, je suis développeur Frontend React et Next.js passionné par la construction d'interfaces utilisateurs et d'applications web modernes que les utilisateurs adorent.",
-    url: "https://yoni-deserbaix-potfolio.vercel.app/",
+    url: "https://yoni-deserbaix-portfolio.vercel.app/",
     siteName: "Yoni Deserbaix",
     images: "/assets/metadata.png",
     type: "website",

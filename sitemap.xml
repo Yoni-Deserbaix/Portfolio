@@ -8,28 +8,33 @@
 
 
 <url>
-  <loc>https://yoni-deserbaix-potfolio.vercel.app/</loc>
-  <lastmod>2024-05-05T18:34:25+00:00</lastmod>
+  <loc>https://yoni-deserbaix-portfolio.vercel.app/</loc>
+  <lastmod>2024-06-23T17:08:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://yoni-deserbaix-potfolio.vercel.app/project/1</loc>
-  <lastmod>2024-05-05T18:34:25+00:00</lastmod>
+  <loc>https://yoni-deserbaix-portfolio.vercel.app/DESERBAIX_YONI_CV.pdf</loc>
+  <lastmod>2024-06-23T17:08:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://yoni-deserbaix-potfolio.vercel.app/project/2</loc>
-  <lastmod>2024-05-05T18:34:25+00:00</lastmod>
+  <loc>https://yoni-deserbaix-portfolio.vercel.app/project/1</loc>
+  <lastmod>2024-06-23T17:08:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://yoni-deserbaix-potfolio.vercel.app/project/3</loc>
-  <lastmod>2024-05-05T18:34:25+00:00</lastmod>
+  <loc>https://yoni-deserbaix-portfolio.vercel.app/project/2</loc>
+  <lastmod>2024-06-23T17:08:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://yoni-deserbaix-potfolio.vercel.app/project/4</loc>
-  <lastmod>2024-05-05T18:34:25+00:00</lastmod>
+  <loc>https://yoni-deserbaix-portfolio.vercel.app/project/3</loc>
+  <lastmod>2024-06-23T17:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yoni-deserbaix-portfolio.vercel.app/project/4</loc>
+  <lastmod>2024-06-23T17:08:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
