@@ -1,5 +1,6 @@
 import {
   SiAxios,
+  SiHtml5,
   SiJavascript,
   SiNextdotjs,
   SiPostgresql,
@@ -7,6 +8,7 @@ import {
   SiReact,
   SiReactrouter,
   SiRedux,
+  SiSass,
   SiStripe,
   SiSupabase,
   SiTailwindcss,
@@ -16,22 +18,18 @@ import {
 export const ProjectsIcons = [
   {
     id: 1,
-    stack: [SiNextdotjs, SiSupabase, SiPostgresql],
+    stack: [SiNextdotjs,SiTypescript, SiTailwindcss, SiRedux, SiPrisma, SiStripe],
   },
   {
     id: 2,
-    stack: [SiNextdotjs, SiRedux, SiPrisma, SiPostgresql, SiStripe],
+    stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiSupabase],
   },
   {
     id: 3,
-    stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiSupabase],
+    stack: [SiReact, SiReactrouter, SiAxios],
   },
   {
     id: 4,
-    stack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiSupabase],
-  },
-  {
-    id: 5,
-    stack: [SiReact, SiReactrouter, SiAxios],
+    stack: [SiHtml5, SiSass, SiJavascript],
   },
 ];
