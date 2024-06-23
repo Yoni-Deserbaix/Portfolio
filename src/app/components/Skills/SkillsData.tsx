@@ -1,5 +1,4 @@
 import {
-  SiCplusplus,
   SiGit,
   SiJavascript,
   SiNextdotjs,
@@ -9,6 +8,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import ReactNativeIcon from "../../../../public/assets/react-native.svg";
 
 export const skillsData = [
   {
@@ -32,8 +32,8 @@ export const skillsData = [
     Icon: SiTypescript,
   },
   {
-    text: "C++",
-    Icon: SiCplusplus,
+    text: "React Native",
+    fakeIcon: ReactNativeIcon,
   },
   {
     text: "PostgreSQL",

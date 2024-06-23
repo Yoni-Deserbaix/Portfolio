@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { IconType } from "react-icons";
 
@@ -9,7 +10,8 @@ export const HoverEffect = ({
 }: {
   items: {
     text: string;
-    Icon: IconType;
+    Icon?: IconType;
+    fakeIcon?: string;
   }[];
   className?: string;
 }) => {
@@ -50,7 +52,19 @@ export const HoverEffect = ({
             </AnimatePresence>
             <div className="rounded-md w-full p-4 overflow-hidden bg-black hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
               <div className="py-10 z-50 relative space-y-50">
-                <Icon className="w-8 h-8 mx-auto" />
+                {Icon ? (
+                  <Icon className="w-8 h-8 mx-auto" />
+                ) : (
+                  item.fakeIcon && (
+                    <Image
+                      src={item.fakeIcon}
+                      alt={`${item.text} icon`}
+                      className="w-12 h-12 mx-auto -mb-2"
+                      width={50}
+                      height={50}
+                    />
+                  )
+                )}
                 <p className="text-sm pt-2 font-bold text-center text-gray-300">
                   {item.text}
                 </p>
