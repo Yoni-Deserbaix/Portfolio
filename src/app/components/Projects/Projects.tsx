@@ -2,6 +2,7 @@ import { supabase } from "@/app/config/supabase";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import FadeOnScroll from "../../../components/ui/animations/FadeOnScroll";
 import Title from "../../../components/ui/Title";
 import { ProjectsIcons } from "./ProjectIcons";
 
@@ -15,16 +16,18 @@ export default async function Projects() {
 
   return (
     <div className="py-10 p-5 sm:p-0" id="projects">
-      <Title
-        text="Projets 🎨"
-        className="flex flex-col mt-28 max-lg:mt-0 items-center justify-center text-3xl rotate-6"
-      />
+      <FadeOnScroll delay={0}>
+        <Title
+          text="Projets 🎨"
+          className="flex flex-col mt-28 max-lg:mt-0 items-center justify-center text-3xl rotate-6"
+        />
+      </FadeOnScroll>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 py-20 gap-5">
         {projects &&
-          projects.map((project, index) => {
-            return (
-              <Link href={`/project/${project.id}`} key={index}>
+          projects.map((project, index) => (
+            <FadeOnScroll key={index} delay={index * 0.1}>
+              <Link href={`/project/${project.id}`}>
                 <div className={cn("p-1 rounded-lg", project.background)}>
                   <DirectionAwareHover
                     imageUrl={project.coverImage.shift()}
@@ -41,8 +44,8 @@ export default async function Projects() {
                   </DirectionAwareHover>
                 </div>
               </Link>
-            );
-          })}
+            </FadeOnScroll>
+          ))}
       </div>
     </div>
   );

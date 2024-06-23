@@ -2,6 +2,8 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import { ProjectsIcons } from "@/app/components/Projects/ProjectIcons";
 import { supabase } from "@/app/config/supabase";
+import FadeOnScroll from "@/components/ui/animations/FadeOnScroll";
+import FadeUp from "@/components/ui/animations/FadeUp";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
@@ -67,42 +69,53 @@ export default async function Home({ params }: ProjectType) {
       <div className="max-w-7xl mx-auto max-xl:px-8 flex flex-wrap">
         <div className="w-2/3 max-md:w-full animate-move-up">
           <h1>
-            <Title
-              text={projectId.title}
-              className="flex flex-col mt-12 items-start justify-center text-3xl"
-            />
+            <FadeUp delay={0.2}>
+              <Title
+                text={projectId.title}
+                className="flex flex-col mt-12 items-start justify-center text-3xl"
+              />
+            </FadeUp>
           </h1>
           <div className="space-y-6">
             <div className="text-xl font-bold pt-12">
-              <h2>{projectId.subtitle}</h2>
+              <FadeUp delay={0.2}>
+                <h2>{projectId.subtitle}</h2>
+              </FadeUp>
             </div>
-            <p className="md:w-96 text-md text-gray-300 max-sm:text-base">
-              {projectId.description}
-            </p>
+            <FadeUp delay={0.4}>
+              <p className="md:w-96 text-md text-gray-300 max-sm:text-base">
+                {projectId.description}
+              </p>
+            </FadeUp>
             <div className="text-xl font-bold">
-              {!projectId.description && <h3>Compétences obtenues :</h3>}
+              <FadeOnScroll delay={0.4}>
+                <h3>Compétences obtenues :</h3>
+              </FadeOnScroll>
             </div>
-            <ul className="md:w-96 text-md text-gray-300 max-sm:text-base">
-              {projectId &&
-                projectId.skillsGained &&
-                projectId.skillsGained
-                  .split("\n")
-                  .map((line: string, index: number) => (
-                    <span key={index}>
-                      {line}
-                      <br />
-                    </span>
-                  ))}
-            </ul>
+            <FadeOnScroll delay={0.6}>
+              <ul className="md:w-96 text-md text-gray-300 max-sm:text-base">
+                {projectId &&
+                  projectId.skillsGained &&
+                  projectId.skillsGained
+                    .split("\n")
+                    .map((line: string, index: number) => (
+                      <span key={index}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
+              </ul>
+            </FadeOnScroll>
             <div className="text-xl font-bold">
-              <h4>Stack Technique :</h4>
+              <FadeUp delay={0.8}>
+                <h4>Stack Technique :</h4>
+              </FadeUp>
             </div>
             <div className="flex gap-5 ml-2">
               {ProjectsIcons[id - 1].stack.map((Icon, iconIndex) => (
-                <Icon
-                  key={iconIndex}
-                  className="w-8 h-8w-8 h-8 hover:scale-125 transition-all"
-                />
+                <FadeOnScroll key={iconIndex} delay={iconIndex * 0.1}>
+                  <Icon className="w-8 h-8w-8 h-8 hover:scale-125 transition-all" />
+                </FadeOnScroll>
               ))}
             </div>
             {projectId.githubLink && projectId.demoLink && (
@@ -112,44 +125,47 @@ export default async function Home({ params }: ProjectType) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Title
-                    text="Code 🚀"
-                    className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
-                  />
+                  <FadeOnScroll delay={0.2}>
+                    <Title
+                      text="Code 🚀"
+                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
+                    />
+                  </FadeOnScroll>
                 </a>
                 <a
                   href={projectId.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Title
-                    text="Demo ✨"
-                    className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
-                  />
+                  <FadeOnScroll delay={0.4}>
+                    <Title
+                      text="Demo ✨"
+                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
+                    />
+                  </FadeOnScroll>
                 </a>
               </div>
             )}
           </div>
         </div>
-        <div className="w-1/3 max-md:w-full animate-move-down">
-          <div className="grid grid-cols-1 pt-12 gap-5 w-full">
+        <div className="w-1/3 max-md:w-full">
+          <FadeOnScroll delay={0.2}>
             <div className="grid grid-cols-1 pt-12 gap-5 w-full">
               {projectId.coverImage &&
                 projectId.coverImage.map((image: string, index: number) => (
-                  <div
-                    key={index}
-                    className={cn("p-1 rounded-lg", projectId.background)}
-                  >
-                    <DirectionAwareHover
-                      imageUrl={image}
-                      className="w-full space-y-5"
-                    >
-                      {""}
-                    </DirectionAwareHover>
-                  </div>
+                  <FadeUp key={index} delay={index * 0.4}>
+                    <div className={cn("p-1 rounded-lg", projectId.background)}>
+                      <DirectionAwareHover
+                        imageUrl={image}
+                        className="w-full space-y-5"
+                      >
+                        {""}
+                      </DirectionAwareHover>
+                    </div>
+                  </FadeUp>
                 ))}
             </div>
-          </div>
+          </FadeOnScroll>
         </div>
       </div>
       <div className="pt-12">

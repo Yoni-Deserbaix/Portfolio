@@ -1,3 +1,4 @@
+import FadeOnScroll from "@/components/ui/animations/FadeOnScroll";
 import Title from "@/components/ui/Title";
 import { Download } from "lucide-react";
 import Link from "next/link";
@@ -5,20 +6,24 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <section id="contact">
-      <Title
-        text="Contact 📪
+      <FadeOnScroll delay={0}>
+        <Title
+          text="Contact 📪
         "
-        className="flex flex-col mt-28 items-center justify-center text-3xl -rotate-6"
-      />
+          className="flex flex-col mt-28 items-center justify-center text-3xl -rotate-6"
+        />
+      </FadeOnScroll>
       <div>
-        <div className="mt-28 flex max-md:flex-col gap-2 max-xl:pl-16 max-sm:pl-4">
-          <p className="text-2xl  font-bold ">Une opportunité d'alternance ?</p>
-          <h1 className="text-2xl font-bold hover:text-green-400 transition-all ">
-            Contactez-moi 👇
-            <div className="w-48 h-2 bg-green-500 rounded-full"></div>
-            <div className="w-48 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-          </h1>
-        </div>
+        <FadeOnScroll delay={0}>
+          <div className="mt-28 flex max-md:flex-col gap-2 max-xl:pl-16 max-sm:pl-4">
+            <p className="text-2xl font-bold ">Une opportunité d'alternance?</p>
+            <h1 className="text-2xl font-bold hover:text-green-400 transition-all ">
+              Contactez-moi 👇
+              <div className="w-48 h-2 bg-green-500 rounded-full"></div>
+              <div className="w-48 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
+            </h1>
+          </div>
+        </FadeOnScroll>
 
         <div className="flex justify-evenly max-lg:flex-col max-lg:gap-4 mt-14 max-xl:pl-16 max-sm:pl-8 p-16 max-sm:p-0">
           <div className="flex items-center gap-4">
