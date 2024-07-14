@@ -33,15 +33,15 @@ export async function generateMetadata({ params }: ProjectType) {
     },
     description: projectId.description,
     metadataBase: new URL(
-      `https://yoni-deserbaix-potfolio.vercel.app/project/${projectId.id}`
+      `https://yoni-deserbaix-portfolio.vercel.app/project/${projectId.id}`
     ),
     alternates: {
-      canonical: `https://yoni-deserbaix-potfolio.vercel.app/project/${projectId.id}`,
+      canonical: `https://yoni-deserbaix-portfolio.vercel.app/project/${projectId.id}`,
     },
     openGraph: {
       title: `${projectId.title} - Yoni Deserbaix `,
       description: projectId.description,
-      url: `https://yoni-deserbaix-potfolio.vercel.app/project/${projectId.id}`,
+      url: `https://yoni-deserbaix-portfolio.vercel.app/project/${projectId.id}`,
     },
   };
 

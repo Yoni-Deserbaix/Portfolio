@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yoni-deserbaix-portfolio.vercel.app/"),
+  metadataBase: new URL("https://yoni-deserbaix-portfolio.vercel.app"),
 
   title: "Yoni Deserbaix - Développeur Frontend React & Next.js",
   authors: {
