@@ -17,7 +17,7 @@ export default function Faq() {
     <div>
       <FadeOnScroll delay={0}>
         <Title
-          text="Mes services 🧑‍🍳"
+          text="Services 🧑‍🍳"
           className="flex flex-col mt-36 mb-12 items-center justify-center text-3xl rotate-6"
         />
       </FadeOnScroll>
