@@ -26,7 +26,7 @@ export default function Faq() {
           <Accordion
             type="single"
             collapsible
-            className="flex justify-center mx-auto flex-col w-2/3 my-28 "
+            className="flex justify-center mx-auto flex-col w-2/3 my-28 max-md:w-full"
           >
             <AccordionItem value="item-1">
               <AccordionTrigger>
