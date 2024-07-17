@@ -17,8 +17,8 @@ export default function Faq() {
     <div>
       <FadeOnScroll delay={0}>
         <Title
-          text="Services 🧑‍🍳"
-          className="flex flex-col mt-36 mb-12 items-center justify-center text-3xl rotate-6"
+          text="FAQ 🤔"
+          className="flex flex-col mt-36 mb-6 items-center justify-center text-3xl rotate-6"
         />
       </FadeOnScroll>
       <div>
@@ -29,9 +29,7 @@ export default function Faq() {
             className="flex justify-center mx-auto flex-col w-2/3 my-28 max-md:w-full"
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger>
-                Quels services j'offre exactement?
-              </AccordionTrigger>
+              <AccordionTrigger>Quels services offrez-vous?</AccordionTrigger>
               <AccordionContent>
                 Je propose des services de création de design, de développement
                 de sites web sur mesure, et je m'occupe également du déploiement
@@ -40,11 +38,12 @@ export default function Faq() {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>
-                Que se passe-t-il si le design ne me plaît pas?
+                Quels types de sites web pouvez-vous créer?
               </AccordionTrigger>
               <AccordionContent>
-                Pas de soucis ! Je travaille avec vous pour réviser et ajuster
-                le design jusqu'à ce que vous en soyez entièrement satisfait.
+                Je peux réaliser une large gamme de sites web : sites vitrines,
+                e-commerce, blogs, portfolios et applications web
+                personnalisées, selon vos besoins spécifiques.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
@@ -71,15 +70,15 @@ export default function Faq() {
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger>
-                Quels types de sites web pouvez-vous créer?
+                Que se passe-t-il si le design ne me plaît pas?
               </AccordionTrigger>
               <AccordionContent>
-                Je peux réaliser une large gamme de sites web : sites vitrines,
-                e-commerce, blogs, portfolios et applications web
-                personnalisées, selon vos besoins spécifiques.
+                Pas de soucis ! Je travaille avec vous pour réviser et ajuster
+                le design jusqu'à ce que vous en soyez entièrement satisfait.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-7">
+
+            <AccordionItem value="item-6">
               <AccordionTrigger>
                 Proposez-vous des services de référencement (SEO)?
               </AccordionTrigger>
@@ -89,7 +88,7 @@ export default function Faq() {
                 visiteurs et de clients.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-8">
+            <AccordionItem value="item-7">
               <AccordionTrigger>
                 Comment se déroule le processus de collaboration?
               </AccordionTrigger>
@@ -100,7 +99,7 @@ export default function Faq() {
                 tout au long du développement jusqu'à la mise en ligne. 🤝
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-9">
+            <AccordionItem value="item-8">
               <AccordionTrigger>
                 Développez-vous des applications mobiles?
               </AccordionTrigger>
