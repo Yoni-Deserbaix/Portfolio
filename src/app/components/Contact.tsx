@@ -17,9 +17,13 @@ export default function Contact() {
         <FadeOnScroll delay={0}>
           <div className="mt-28 flex max-md:flex-col gap-2 max-xl:pl-16 max-sm:pl-4">
             <p className="text-2xl font-bold ">
-              Besoin d'un site web qui se démarque ? ✨
+              Besoin d'un site web qui se{" "}
+              <span className="underline underline-offset-4 decoration-indigo-500">
+                démarque
+              </span>{" "}
+              ? ✨
             </p>
-            <h1 className="text-2xl font-bold hover:text-green-400 transition-all ">
+            <h1 className="text-2xl font-bold ">
               Parlons-en !
               <div className="w-36 h-2 bg-green-500 rounded-full"></div>
               <div className="w-36 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
