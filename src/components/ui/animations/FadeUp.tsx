@@ -2,9 +2,14 @@
 
 import { motion } from "framer-motion";
 
-const FadeDown = ({ children, delay = 0 }) => {
+type FadeUpType = {
+  children: React.ReactNode;
+  delay?: number;
+};
+
+const FadeUp = ({ children, delay = 0 }: FadeUpType) => {
   const variants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -20,4 +25,4 @@ const FadeDown = ({ children, delay = 0 }) => {
   );
 };
 
-export default FadeDown;
+export default FadeUp;

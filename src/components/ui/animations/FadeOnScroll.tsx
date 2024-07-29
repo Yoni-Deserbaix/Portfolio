@@ -2,7 +2,12 @@
 import { motion, useInView } from "framer-motion";
 import React from "react";
 
-const FadeOnScroll = ({ children, delay = 0 }) => {
+type FadeOnScrollType = {
+  children: React.ReactNode;
+  delay?: number;
+};
+
+const FadeOnScroll = ({ children, delay = 0 }: FadeOnScrollType) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
