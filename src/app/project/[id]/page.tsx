@@ -64,7 +64,7 @@ export default async function Home({ params }: ProjectType) {
   };
 
   return (
-    <div className="max-w-7xl mx-auto max-xl:px-8">
+    <div className="max-w-6xl mx-auto max-xl:px-8">
       <Header />
       <div className="max-w-7xl mx-auto max-xl:px-8 flex flex-wrap">
         <div className="w-2/3 max-md:w-full animate-move-up">
