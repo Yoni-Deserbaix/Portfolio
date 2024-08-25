@@ -10,13 +10,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yoni-deserbaix-portfolio.vercel.app"),
 
   title: "Yoni Deserbaix - Développeur Frontend React & Next.js",
-  authors: {
-    name: "Yoni Deserbaix",
-  },
+  authors: [
+    {
+      name: "Yoni Deserbaix",
+      url: "https://yoni-deserbaix-portfolio.vercel.app",
+    },
+    {
+      name: "y2_dev",
+      url: "https://yoni-deserbaix-portfolio.vercel.app",
+    },
+  ],
   description:
     "Basé à Nantes, je suis développeur Frontend React et Next.js passionné par la construction d'interfaces utilisateurs et d'applications web modernes que les utilisateurs adorent.",
   icons: {
-    icon: ["/assets/memoji-favicon.png"],
+    icon: ["/assets/favicon-danny-phantom.png"],
   },
 
   openGraph: {
@@ -28,13 +35,7 @@ export const metadata: Metadata = {
     images: "/assets/metadata.png",
     type: "website",
   },
-  keywords: [
-    "Portfolio",
-    "Yoni Deserbaix",
-    "Développeur Frontend",
-    "JavaScript",
-    "TypeScript",
-  ],
+  keywords: ["Portfolio", "Yoni Deserbaix", "y2_dev", "y2dev", "y2/ui"],
 };
 
 export default function RootLayout({
