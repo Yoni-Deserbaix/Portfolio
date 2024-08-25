@@ -111,12 +111,12 @@ export default async function Home({ params }: ProjectType) {
                 <h4>Stack Technique :</h4>
               </FadeUp>
             </div>
-            <div className="flex ml-2 gap-5">
+            <div className="flex ml-2 gap-5 flex-wrap">
               {ProjectsIcons[id - 1].stack.map((stackItem, iconIndex) => (
                 <FadeOnScroll key={iconIndex} delay={iconIndex * 0.1}>
                   <div className="flex flex-col items-center relative group">
                     <stackItem.icon className="size-8 transition-transform duration-300 ease-in-out group-hover:scale-125" />
-                    <span className="text-sm text-gray-300 text-center font-bold opacity-0 transition-opacity duration-300 group-hover:opacity-100 absolute bottom-[-2rem]">
+                    <span className="text-sm text-gray-300 text-center font-bold md:absolute mt-2 bottom-[-2rem] transition-opacity duration-300 group-hover:opacity-100 opacity-100 md:opacity-0 md:group-hover:opacity-100">
                       {stackItem.name}
                     </span>
                   </div>
