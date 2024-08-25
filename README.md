@@ -7,8 +7,9 @@ My personal portfolio, optimized and built with Next.js. This project has allowe
 Check out the project online 👉 [here](https://yoni-deserbaix-potfolio.vercel.app/)
 
 ## Screenshots 📸 
-![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01.png)
-![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01-2.png)
+![portfolio-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/portfolio_home.png)
+![portfolio-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/portfolio03.png)
+![portfolio-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/portfolio02.png)
 
 ## Technologies used 🔪
 
