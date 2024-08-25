@@ -60,7 +60,7 @@ export const HoverEffect = ({
                       <Image
                         src={item.fakeIcon}
                         alt={`${item.text} icon`}
-                        className="w-12 h-12 mx-auto -mb-2"
+                        className="size-12 mx-auto -mb-2"
                         width={50}
                         height={50}
                       />
