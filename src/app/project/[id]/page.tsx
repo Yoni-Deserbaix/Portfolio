@@ -134,7 +134,7 @@ export default async function Home({ params }: ProjectType) {
                   <FadeOnScroll delay={0.2}>
                     <Title
                       text="Code 🚀"
-                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
+                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
                     />
                   </FadeOnScroll>
                 </a>
@@ -146,7 +146,7 @@ export default async function Home({ params }: ProjectType) {
                   <FadeOnScroll delay={0.4}>
                     <Title
                       text="Demo ✨"
-                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6"
+                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
                     />
                   </FadeOnScroll>
                 </a>
