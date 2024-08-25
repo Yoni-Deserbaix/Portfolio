@@ -7,31 +7,44 @@ My personal portfolio, optimized and built with Next.js. This project has allowe
 Check out the project online 👉 [here](https://yoni-deserbaix-potfolio.vercel.app/)
 
 ## Screenshots 📸 
-![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01.png)
-![portfolio-screen](https://github.com/Yoni-Deserbaix/Portfolio/blob/main/public/assets/projects/project01-2.png)
+![portfolio-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/portfolio_home.png)
+![portfolio-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/portfolio03.png)
+![portfolio-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/portfolio02.png)
 
 ## Technologies used 🔪
-- Next.js  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="15" alt="nextjs logo"  />
-- TypeScript <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="15" alt="typescript logo"  />
-- Tailwind <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="15" alt="tailwindcss logo"  />
-- [Shadcn/UI](https://ui.shadcn.com/)
-- [Aceternity UI](https://ui.aceternity.com/)
+
+### Frontend
+
+- **TailwindCSS**: A utility-first CSS framework for quickly styling web applications.
+- **Shadcn/UI**: A collection of accessible and customizable UI components designed to improve the look and feel of web interfaces.
+- **Acteternity UI**: A set of modern UI components that streamline the design process, ensuring a polished and consistent user experience.
+- **Framer Motion**: A popular library for creating animations and transitions in React applications, enhancing user interactions with smooth and engaging animations.
 
 
-## Inspirations 💭 
-I drew inspiration from  https://www.chensokheng.com/ and enhanced it with my own design. Check out my Figma design for more details!
+### Backend
 
-🎨 [My Figma design](https://www.figma.com/file/i5Fu7yKCNsgWrE3YzDz20S/Yoni-Deserbaix-Portfolio-%F0%9F%9A%80?type=design&node-id=0%3A1&mode=design&t=KxwC6EDNLCwIx7LF-1)
+- **Next.JS**: A React framework that enables server-side rendering, static site generation, and routing for building fast and SEO-friendly web applications.
+
+### Database
+
+- **PostgreSQL** (with Supabase): Relational database management system used for storing user data, product information, and order details.
+
 
 ## Skills Gained 🌟
 
-- **Figma Wireframing:** I've learned to create website wireframes using Figma, enabling effective planning for my portfolio's design.
+- **Reusable Component Usage for Styling**: I've implemented reusable components to maintain consistency and ease of maintenance in my code.
+
+- **Proficiency in Tailwind CSS**: I utilized Tailwind CSS to style my portfolio quickly and efficiently, leveraging its utility classes.
+
+- **Utilization of UI Libraries such as Shadcn/UI and Aceternity/UI**: I integrated UI libraries like Shadcn/UI and Aceternity/UI to enhance the user experience of my portfolio, adding ready-to-use features and components.
+
+- **Animations with Framer Motion**: Applied Framer Motion to create smooth and engaging animations, improving the overall visual appeal and user interaction of the portfolio.
   
-- **Reusable Component Usage for Styling:** I've implemented reusable components to maintain consistency and ease of maintenance in my code.
+- **SEO Optimization**: Enhanced SEO with Next.js by configuring metadata, implementing a sitemap, and integrating analytics with Vercel. This includes:
+  - **Metadata**: Added dynamic and relevant meta tags to improve search engine visibility and social media sharing.
+  - **Sitemap**: Generated and submitted a sitemap to search engines to ensure better indexing of the site.
+  - **Analytics**: Set up Vercel Analytics to monitor performance and user interactions for ongoing optimization.
 
-- **Proficiency in Tailwind CSS:** I utilized Tailwind CSS to style my portfolio quickly and efficiently, leveraging its utility classes.
-
-- **Utilization of UI Libraries such as Shadcn/UI and Aceternity/UI:** I integrated UI libraries like Shadcn/UI and Aceternity/UI to enhance the user experience of my portfolio, adding ready-to-use features and components.
 
 ## Getting Started
 
@@ -49,12 +62,3 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
