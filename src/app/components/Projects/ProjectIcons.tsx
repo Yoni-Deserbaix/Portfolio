@@ -10,10 +10,10 @@ import {
   SiRedux,
   SiSass,
   SiStripe,
-  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 export const ProjectsIcons = [
   {
@@ -31,16 +31,17 @@ export const ProjectsIcons = [
   {
     id: 2,
     stack: [
-      { icon: SiNextdotjs, name: "Next.js" },
+      { icon: SiReact, name: "React" },
       { icon: SiTypescript, name: "TypeScript" },
       { icon: SiTailwindcss, name: "Tailwind" },
-      { icon: SiSupabase, name: "Supabase" },
+      { icon: TbBrandFramerMotion, name: "Framer Motion" },
     ],
   },
   {
     id: 3,
     stack: [
       { icon: SiReact, name: "React" },
+      { icon: SiJavascript, name: "JavaScript" },
       { icon: SiReactrouter, name: "React Router" },
       { icon: SiAxios, name: "Axios" },
     ],
