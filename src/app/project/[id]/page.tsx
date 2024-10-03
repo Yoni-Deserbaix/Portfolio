@@ -123,35 +123,46 @@ export default async function Home({ params }: ProjectType) {
                 </FadeOnScroll>
               ))}
             </div>
-
-            {projectId.githubLink && projectId.demoLink && (
-              <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
-                <a
-                  href={projectId.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FadeOnScroll delay={0.2}>
-                    <Title
-                      text="Code 🚀"
-                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
-                    />
-                  </FadeOnScroll>
-                </a>
-                <a
-                  href={projectId.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FadeOnScroll delay={0.4}>
-                    <Title
-                      text="Demo ✨"
-                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
-                    />
-                  </FadeOnScroll>
-                </a>
-              </div>
-            )}
+            <div>
+              {projectId.githubLink === "private" ? (
+                <FadeOnScroll delay={0.2}>
+                  <Title
+                    text="Code privé 🔒"
+                    className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 opacity-50 cursor-not-allowed"
+                  />
+                </FadeOnScroll>
+              ) : (
+                projectId.githubLink &&
+                projectId.demoLink && (
+                  <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
+                    <a
+                      href={projectId.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FadeOnScroll delay={0.2}>
+                        <Title
+                          text="Code 🚀"
+                          className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
+                        />
+                      </FadeOnScroll>
+                    </a>
+                    <a
+                      href={projectId.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FadeOnScroll delay={0.4}>
+                        <Title
+                          text="Demo ✨"
+                          className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
+                        />
+                      </FadeOnScroll>
+                    </a>
+                  </div>
+                )
+              )}
+            </div>
           </div>
         </div>
         <div className="w-1/3 max-md:w-full">
