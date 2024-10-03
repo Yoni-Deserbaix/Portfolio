@@ -1,11 +1,15 @@
 import {
   SiAxios,
+  SiExpo,
   SiHtml5,
+  SiI18Next,
   SiJavascript,
+  SiNativescript,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
   SiReact,
+  SiReactquery,
   SiReactrouter,
   SiRedux,
   SiSass,
@@ -22,7 +26,7 @@ export const ProjectsIcons = [
       { icon: SiNextdotjs, name: "Next.js" },
       { icon: SiTypescript, name: "TypeScript" },
       { icon: SiTailwindcss, name: "Tailwind" },
-      { icon: SiRedux, name: "Redux" },
+      { icon: SiRedux, name: "Redux Toolkit" },
       { icon: SiPrisma, name: "Prisma" },
       { icon: SiPostgresql, name: "PostgreSQL" },
       { icon: SiStripe, name: "Stripe" },
@@ -31,6 +35,16 @@ export const ProjectsIcons = [
   {
     id: 2,
     stack: [
+      { icon: SiReact, name: "React Native" },
+      { icon: SiExpo, name: "Expo" },
+      { icon: SiTypescript, name: "TypeScript" },
+      { icon: SiTailwindcss, name: "Nativewind" },
+      { icon: SiRedux, name: "Redux Toolkit" },
+    ],
+  },
+  {
+    id: 3,
+    stack: [
       { icon: SiReact, name: "React" },
       { icon: SiTypescript, name: "TypeScript" },
       { icon: SiTailwindcss, name: "Tailwind" },
@@ -38,20 +52,12 @@ export const ProjectsIcons = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     stack: [
       { icon: SiReact, name: "React" },
       { icon: SiJavascript, name: "JavaScript" },
       { icon: SiReactrouter, name: "React Router" },
       { icon: SiAxios, name: "Axios" },
-    ],
-  },
-  {
-    id: 4,
-    stack: [
-      { icon: SiHtml5, name: "HTML5" },
-      { icon: SiSass, name: "Sass" },
-      { icon: SiJavascript, name: "JavaScript" },
     ],
   },
 ];
