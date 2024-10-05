@@ -123,7 +123,7 @@ export default async function Home({ params }: ProjectType) {
                 </FadeOnScroll>
               ))}
             </div>
-            <div>
+            <div className="flex flex-row gap-20 max-sm:flex-col max-sm:gap-0">
               {projectId.githubLink === "private" ? (
                 <FadeOnScroll delay={0.2}>
                   <Title
@@ -131,36 +131,33 @@ export default async function Home({ params }: ProjectType) {
                     className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 opacity-50 cursor-not-allowed"
                   />
                 </FadeOnScroll>
-              ) : (
-                projectId.githubLink &&
-                projectId.demoLink && (
-                  <div className="flex gap-20 max-sm:flex-col max-sm:gap-0">
-                    <a
-                      href={projectId.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FadeOnScroll delay={0.2}>
-                        <Title
-                          text="Code 🚀"
-                          className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
-                        />
-                      </FadeOnScroll>
-                    </a>
-                    <a
-                      href={projectId.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FadeOnScroll delay={0.4}>
-                        <Title
-                          text="Demo ✨"
-                          className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
-                        />
-                      </FadeOnScroll>
-                    </a>
-                  </div>
-                )
+              ) : projectId.githubLink ? (
+                <a
+                  href={projectId.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FadeOnScroll delay={0.2}>
+                    <Title
+                      text="Code 🚀"
+                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
+                    />
+                  </FadeOnScroll>
+                </a>
+              ) : null}
+              {projectId.demoLink && (
+                <a
+                  href={projectId.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FadeOnScroll delay={0.4}>
+                    <Title
+                      text="Demo ✨"
+                      className="flex flex-col mt-12 items-start justify-center text-3xl -rotate-6 hover:-translate-y-1 transition-all"
+                    />
+                  </FadeOnScroll>
+                </a>
               )}
             </div>
           </div>
