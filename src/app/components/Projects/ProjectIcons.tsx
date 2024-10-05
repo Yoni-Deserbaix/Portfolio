@@ -1,13 +1,13 @@
 import {
-  SiAxios,
   SiExpo,
   SiJavascript,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
   SiReact,
-  SiReactrouter,
   SiRedux,
+  SiRuby,
+  SiRubyonrails,
   SiStripe,
   SiTailwindcss,
   SiTypescript,
@@ -18,13 +18,11 @@ export const ProjectsIcons = [
   {
     id: 1,
     stack: [
-      { icon: SiNextdotjs, name: "Next.js" },
-      { icon: SiTypescript, name: "TypeScript" },
+      { icon: SiRubyonrails, name: "Ruby on Rails" },
+      { icon: SiRuby, name: "Ruby" },
+      { icon: SiJavascript, name: "JavaScript" },
       { icon: SiTailwindcss, name: "Tailwind" },
-      { icon: SiRedux, name: "Redux Toolkit" },
-      { icon: SiPrisma, name: "Prisma" },
       { icon: SiPostgresql, name: "PostgreSQL" },
-      { icon: SiStripe, name: "Stripe" },
     ],
   },
   {
@@ -49,10 +47,13 @@ export const ProjectsIcons = [
   {
     id: 4,
     stack: [
-      { icon: SiReact, name: "React" },
-      { icon: SiJavascript, name: "JavaScript" },
-      { icon: SiReactrouter, name: "React Router" },
-      { icon: SiAxios, name: "Axios" },
+      { icon: SiNextdotjs, name: "Next.js" },
+      { icon: SiTypescript, name: "TypeScript" },
+      { icon: SiTailwindcss, name: "Tailwind" },
+      { icon: SiRedux, name: "Redux Toolkit" },
+      { icon: SiPrisma, name: "Prisma" },
+      { icon: SiPostgresql, name: "PostgreSQL" },
+      { icon: SiStripe, name: "Stripe" },
     ],
   },
 ];
