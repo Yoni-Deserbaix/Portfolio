@@ -99,10 +99,10 @@ export default async function Home({ params }: ProjectType) {
                   projectId.skillsGained
                     .split("\n")
                     .map((line: string, index: number) => (
-                      <span key={index}>
+                      <li key={index}>
                         {line}
                         <br />
-                      </span>
+                      </li>
                     ))}
               </ul>
             </FadeOnScroll>
