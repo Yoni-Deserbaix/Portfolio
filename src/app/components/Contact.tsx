@@ -66,6 +66,7 @@ export default function Contact() {
                 rel="noreferrer"
                 target="_blank"
                 className="p-4 rounded-[50%] hover:scale-125 transition-all"
+                aria-label="Download a resume"
               >
                 <Download />
               </Link>
